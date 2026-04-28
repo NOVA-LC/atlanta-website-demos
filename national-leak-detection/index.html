@@ -1,0 +1,151 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><title>National Leak Detection — Find the leak. Save the floor.</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+.demo-tag{position:fixed;bottom:24px;right:24px;padding:14px 22px;font-size:13px;font-weight:600;z-index:100;border-radius:999px;letter-spacing:.05em}
+.demo-tag::before{content:'DEMO · ';opacity:.6;font-weight:500}
+@media print{.demo-tag{display:none}}
+
+body{font-family:'Inter',sans-serif;background:#F4F1EA;color:#0E2238;line-height:1.6}
+.serif{font-family:'Fraunces',serif;letter-spacing:-.02em}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(244,241,234,.85);border-bottom:1px solid rgba(14,34,56,.08);padding:16px 0}
+.nav-row{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Fraunces',serif;font-weight:600;font-size:22px;color:#0E2238}
+.logo span{color:#C04A1F}
+.nav-links{display:flex;gap:30px;font-size:14px;font-weight:500}
+.nav-links a{color:#0E2238;text-decoration:none;opacity:.7}
+.nav-cta{padding:11px 22px;background:#0E2238;color:#F4F1EA;border-radius:999px;text-decoration:none;font-size:14px;font-weight:600}
+.hero{padding:80px 0 60px;background:linear-gradient(rgba(244,241,234,.85),rgba(244,241,234,.7)),url("https://images.unsplash.com/photo-1551845728-6820a30c64e1?auto=format&fit=crop&w=1600&q=80") center/cover;position:relative}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#C04A1F;margin-bottom:24px}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(44px,7vw,108px);font-weight:500;line-height:1.05;margin-bottom:32px;max-width:1100px}
+.hero h1 em{font-style:italic;font-weight:400;color:#C04A1F}
+.hero-sub{font-size:21px;max-width:620px;color:#445971;margin-bottom:40px;font-weight:300}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{padding:18px 36px;background:#0E2238;color:#F4F1EA;border-radius:999px;text-decoration:none;font-weight:600;font-size:16px;display:inline-flex;align-items:center;gap:10px}
+.btn-ghost{padding:18px 36px;background:transparent;color:#0E2238;border:1.5px solid rgba(14,34,56,.2);border-radius:999px;text-decoration:none;font-weight:600;font-size:16px}
+.stats{padding:60px 0;border-top:1px solid rgba(14,34,56,.1);border-bottom:1px solid rgba(14,34,56,.1);margin-top:60px}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:60px}
+.stat .num{font-family:'Fraunces',serif;font-weight:500;font-size:64px;color:#0E2238;line-height:1}
+.stat .num em{font-style:italic;color:#C04A1F}
+.stat .lbl{font-size:13px;font-weight:500;letter-spacing:.05em;color:#445971;margin-top:10px;text-transform:uppercase}
+section{padding:120px 0}
+.sec-h{font-family:'Fraunces',serif;font-size:clamp(36px,5vw,64px);font-weight:500;line-height:1.05;margin-bottom:24px;max-width:880px}
+.sec-h em{font-style:italic;color:#C04A1F}
+.sec-lead{font-size:19px;max-width:680px;color:#445971;margin-bottom:60px;font-weight:300}
+.process{background:linear-gradient(rgba(14,34,56,.92),rgba(14,34,56,.92)),url("https://images.unsplash.com/photo-1585441120085-1d4c1c2e2c91?auto=format&fit=crop&w=1600&q=80") center/cover;color:#F4F1EA}
+.process .eyebrow{color:#E89A6E}
+.process .sec-h{color:#F4F1EA}
+.process .sec-h em{color:#E89A6E}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:30px}
+.step{padding-top:30px;border-top:1px solid rgba(244,241,234,.2)}
+.step .n{font-family:'Fraunces',serif;font-style:italic;font-size:42px;color:#E89A6E;margin-bottom:18px}
+.step h4{font-size:20px;font-weight:500;margin-bottom:12px;font-family:'Fraunces',serif}
+.step p{color:rgba(244,241,234,.65);font-size:14px}
+.cta-band{padding:120px 0;text-align:center}
+.cta-band h2{font-family:'Fraunces',serif;font-size:clamp(40px,6vw,80px);font-weight:500;margin-bottom:30px}
+.cta-band h2 em{font-style:italic;color:#C04A1F}
+footer{padding:60px 0 30px;border-top:1px solid rgba(14,34,56,.1);font-size:14px;color:#445971}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:40px}
+.foot-grid h5{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#0E2238;margin-bottom:14px}
+.foot-grid div p{padding:4px 0}
+.foot-bot{padding-top:30px;border-top:1px solid rgba(14,34,56,.1);display:flex;justify-content:space-between;font-size:13px}
+.demo-tag{background:#0E2238;color:#F4F1EA}
+@media(max-width:900px){.nav-links,.foot-grid{display:none}.stat-grid,.steps{grid-template-columns:1fr;gap:30px}section{padding:60px 0}}
+</style></head><body>
+<nav><div class="wrap nav-row">
+<div class="logo">National<span>·</span>Leak Detection</div>
+<div class="nav-links"><a href="#services">What we find</a><a href="#process">How it works</a><a href="#about">About</a><a href="#reviews">Reviews</a></div>
+<a href="tel:+1 404-579-1188" class="nav-cta">📞 (404) 579-1188</a>
+</div></nav>
+<section class="hero"><div class="wrap">
+<div class="eyebrow">Marietta, GA · Residential Experts… Over 10,000 water leaks detected… Now S</div>
+<h1>The leak <em>is somewhere</em>.<br>We'll show you <em>exactly</em> where.</h1>
+<p class="hero-sub">Three plumbers couldn't find it. The wall was about to come down. Then we showed up — and pinpointed the leak before they tore anything out. We don't repair. We don't sell repipes. We do one thing: locate water that shouldn't be there.</p>
+<div class="hero-cta">
+<a href="tel:+1 404-579-1188" class="btn-primary">Schedule a leak detection →</a>
+<a href="#process" class="btn-ghost">How it works</a>
+</div></div></section>
+<div class="wrap"><div class="stats"><div class="stat-grid">
+<div class="stat"><div class="num">10,000<em>+</em></div><div class="lbl">Leaks detected</div></div>
+<div class="stat"><div class="num">4.9<em>★</em></div><div class="lbl">302 Google reviews</div></div>
+<div class="stat"><div class="num">5.0<em>★</em></div><div class="lbl">13 Yelp reviews</div></div>
+<div class="stat"><div class="num"><em>Mon-Fri</em></div><div class="lbl">Mon–Fri 8a–5p · Closed Sat/Sun</div></div>
+</div></div></div>
+<section id="services"><div class="wrap">
+<div class="eyebrow">— What we find</div>
+<h2 class="sec-h">Specialists, not <em>generalists</em>.</h2>
+<p class="sec-lead">Slab leaks under foundations. Pool and spa leaks. Hidden water lines behind walls. Sewer breaks. Insurance documentation. Pre-purchase inspections. Anywhere water is going where it shouldn't, we find it — without the demolition.</p>
+</div></section>
+<section class="process" id="process"><div class="wrap">
+<div class="eyebrow">— How it works</div>
+<h2 class="sec-h">Four steps. <em>One visit.</em></h2>
+<div class="steps">
+<div class="step"><div class="n">i.</div><h4>Schedule</h4><p>Call or text. Same-week and weekend availability.</p></div>
+<div class="step"><div class="n">ii.</div><h4>Investigate</h4><p>Acoustic listening, thermal imaging, tracer gas, line locators. Every tool, every visit.</p></div>
+<div class="step"><div class="n">iii.</div><h4>Pinpoint</h4><p>We mark the location precisely on the surface — the exact spot to open. No guessing.</p></div>
+<div class="step"><div class="n">iv.</div><h4>Hand off</h4><p>Written report and photos. Your plumber repairs only what's needed.</p></div>
+</div></div></section>
+<section id="about"><div class="wrap"><div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start">
+<div>
+<div class="eyebrow">— A family-run team</div>
+<h2 class="sec-h">Kent and the crew have been finding leaks <em>for over a decade</em>.</h2>
+<p style="font-size:18px;color:#445971;font-weight:300;line-height:1.7;margin-bottom:20px">Residential Experts… Over 10,000 water leaks detected… Now Serving the Atlanta metropolitan area. Today the family-run team includes Laura on coordination and Paul, Ken, Chase, and Sean in the field — names you'll see again and again in our reviews.</p>
+<p style="font-size:14px;color:#9CA3AF;font-style:italic">Note for sales: Owner shown publicly as "Kent S." on Yelp business owner replies. Full name needs verification.</p>
+</div>
+<div>
+<div style="font-family:'Fraunces',serif;font-size:38px;line-height:1.25;color:#0E2238;margin-bottom:30px">"I had heard great things about this <em style="font-style:italic;color:#C04A1F">family run business</em> and they did not disappoint."</div>
+<div style="display:flex;align-items:center;gap:18px;padding-top:30px;border-top:1px solid rgba(14,34,56,.15)">
+<div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#C04A1F,#E89A6E);display:flex;align-items:center;justify-content:center;color:#F4F1EA;font-family:'Fraunces',serif;font-size:24px">TM</div>
+<div><div style="font-weight:600">Taylor M.</div><div style="font-size:14px;color:#445971">Verified Yelp review · Apr 3, 2026</div></div>
+</div></div>
+</div></div></section>
+<section id="reviews" style="background:rgba(14,34,56,.04)"><div class="wrap">
+<div class="eyebrow">— Real reviews</div>
+<h2 class="sec-h">302 Google reviews. <em>4.9 stars.</em></h2>
+<p class="sec-lead">A selection from <a href="https://www.yelp.com/biz/national-leak-detection-marietta" target="_blank" style="color:#C04A1F;text-decoration:underline">Yelp</a> and <a href="https://search.google.com/local/reviews?placeid=ChIJDdJuW70R9YgRhQ1OSPZ7-lg" target="_blank" style="color:#C04A1F;text-decoration:underline">Google</a> — verbatim, with full attribution.</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+        <div style="background:#fff;padding:32px;border-radius:8px;border:1px solid rgba(0,0,0,.08)">
+            <div style="color:#FBBF24;font-size:16px;letter-spacing:2px;margin-bottom:14px">★★★★★</div>
+            <p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px">"National Leak Detection was a great company to work with while dealing with a stressful water situation. Laura was reassuring to work with and was able to schedule our service quickly. Paul was able to find the source of the problem and he couldn&#x27;t have been easier or nicer to work with. I highly recommend this company - great service all around!"</p>
+            <div style="font-size:13px;color:#666;font-weight:500">— Lynn E. · Boston, MA · Mar 5, 2026 · <em style='font-style:italic'>via Yelp</em></div>
+        </div>
+        <div style="background:#fff;padding:32px;border-radius:8px;border:1px solid rgba(0,0,0,.08)">
+            <div style="color:#FBBF24;font-size:16px;letter-spacing:2px;margin-bottom:14px">★★★★★</div>
+            <p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px">"Ken &amp; Chase were both very professional and knowledgeable. (They arrived earlier than expected and communicated their arrival). They quickly found the first leak. There was an additional leak that was a bit more complicated- the City got involved and confirmed it was a city issue but Ken &amp; Chase stuck around a bit longer to try to help them- it was above and beyond and very appreciated. I had heard great things about this family run business and they did not disappoint."</p>
+            <div style="font-size:13px;color:#666;font-weight:500">— Taylor M. · GA · Apr 3, 2026 · <em style='font-style:italic'>via Yelp</em></div>
+        </div>
+        <div style="background:#fff;padding:32px;border-radius:8px;border:1px solid rgba(0,0,0,.08)">
+            <div style="color:#FBBF24;font-size:16px;letter-spacing:2px;margin-bottom:14px">★★★★★</div>
+            <p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px">"Quick to get my house on their schedule, pleasant to deal with, very professional and knowledgeable, with a clearly stated and reasonable rate."</p>
+            <div style="font-size:13px;color:#666;font-weight:500">— Nancy W. · Marietta, GA · Mar 25, 2026 · <em style='font-style:italic'>via Yelp</em></div>
+        </div></div>
+</div></section>
+<section class="cta-band"><div class="wrap">
+<h2>Got a leak you can't <em>find?</em></h2>
+<p style="font-size:19px;color:#445971;max-width:600px;margin:0 auto 40px;font-weight:300">Call Kent. Same week. Often same day.</p>
+<div class="hero-cta" style="justify-content:center">
+<a href="tel:+1 404-579-1188" class="btn-primary">📞 (404) 579-1188</a>
+<a href="https://www.google.com/maps/place/National+Leak+Detection/@34.02686,-84.474448,14z/data=!4m8!1m2!2m1!1sNational+Leak+Detection!3m4!1s0x88f511bd5b6ed20d:0x58fa7bf6484e0d85!8m2!3d34.02686!4d-84.474448" target="_blank" class="btn-ghost">View on Google Maps →</a>
+</div></div></section>
+
+<section style="padding:80px 0;background:linear-gradient(180deg,rgba(0,0,0,.02),transparent)">
+<div style="max-width:1240px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+<div>
+<div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;opacity:.7;margin-bottom:16px">— On Google Maps</div>
+<h3 style="font-size:clamp(28px,3.5vw,48px);font-weight:600;line-height:1.1;margin-bottom:18px">Here&apos;s the spot.</h3>
+<p style="font-size:17px;opacity:.75;line-height:1.6">This is National Leak Detection&apos;s actual Google Maps photo. Scraped April 2026.</p>
+</div>
+<img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAE35EMp3Lcblz6D4qiZ5of5qELc_eELvMuXANyAjCnlr9ypvy1hA" alt="National Leak Detection" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px;box-shadow:0 30px 60px -25px rgba(0,0,0,.25)" referrerpolicy="no-referrer">
+</div></section><footer><div class="wrap"><div class="foot-grid">
+<div><div class="logo" style="margin-bottom:14px">National<span>·</span>Leak Detection</div><p>Specialty leak detection for homeowners, contractors, and insurance carriers across metro Atlanta. Family-run.</p></div>
+<div><h5>Visit</h5><p>3605 Sandy Plains Rd Suite 240-235</p><p>Marietta, GA 30066</p><p>Mon–Fri 8a–5p · Closed Sat/Sun</p></div>
+<div><h5>Contact</h5><p><a href="tel:+1 404-579-1188">(404) 579-1188</a></p><p><a href="https://www.google.com/maps/place/National+Leak+Detection/@34.02686,-84.474448,14z/data=!4m8!1m2!2m1!1sNational+Leak+Detection!3m4!1s0x88f511bd5b6ed20d:0x58fa7bf6484e0d85!8m2!3d34.02686!4d-84.474448" target="_blank">Google Maps →</a></p><p><a href="https://www.yelp.com/biz/national-leak-detection-marietta" target="_blank">Yelp →</a></p></div>
+</div><div class="foot-bot"><div>© 2026 National Leak Detection · Marietta, GA</div><div>4.9★ Google · 5.0★ Yelp</div></div></div></footer>
+<div class="demo-tag">National Leak Detection</div>
+</body></html>

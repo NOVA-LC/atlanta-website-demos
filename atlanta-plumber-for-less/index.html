@@ -1,0 +1,146 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><title>Atlanta Plumber For Less — Honest plumbing, honest prices</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:#F4F8F1;color:#0F2A1B;line-height:1.6;-webkit-font-smoothing:antialiased}
+.display{font-family:'Space Grotesk',sans-serif;letter-spacing:-.03em;line-height:.95}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.alert{background:#FEF3C7;color:#78350F;padding:10px 0;font-size:13px;text-align:center;font-weight:500}
+nav{padding:22px 0;background:#fff;border-bottom:1px solid rgba(15,42,27,.06);position:sticky;top:0;z-index:50}
+.nav-row{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:21px;letter-spacing:-.02em}
+.logo-dot{width:14px;height:14px;background:#16A34A;border-radius:50%;display:inline-block}
+.nav-links{display:flex;gap:32px;font-size:15px;font-weight:500}
+.nav-links a{color:#0F2A1B;text-decoration:none}
+.nav-cta{padding:12px 22px;background:#16A34A;color:#fff;text-decoration:none;font-weight:600;font-size:14px;border-radius:999px}
+.hero{padding:90px 0 60px;background:linear-gradient(rgba(244,248,241,.85),rgba(244,248,241,.95)),url("https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1600&q=80") center/cover}
+.tag{display:inline-flex;align-items:center;gap:10px;background:#16A34A;color:#fff;padding:8px 16px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:32px}
+.tag .pulse{width:8px;height:8px;background:#fff;border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(48px,7vw,108px);font-weight:700;line-height:.95;letter-spacing:-.03em;margin-bottom:32px;max-width:1100px}
+.hero h1 .accent{color:#16A34A}
+.hero h1 .strike{text-decoration:line-through;text-decoration-color:#16A34A;text-decoration-thickness:6px;color:#9CA3AF}
+.hero p{font-size:21px;color:#4B5D54;max-width:600px;margin-bottom:42px}
+.btn{padding:18px 32px;font-weight:600;text-decoration:none;font-size:15px;border-radius:999px;display:inline-flex;align-items:center;gap:10px}
+.btn-primary{background:#16A34A;color:#fff}
+.btn-secondary{background:#fff;color:#0F2A1B;border:1.5px solid #0F2A1B}
+.price-strip{margin-top:60px;padding:40px;background:#0F2A1B;color:#fff;border-radius:24px;display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.price-strip .p .num{font-family:'Space Grotesk',sans-serif;font-size:42px;font-weight:700;color:#86EFAC;line-height:1}
+.price-strip .p .lbl{font-size:13px;color:rgba(255,255,255,.7);margin-top:6px}
+section{padding:110px 0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#16A34A;margin-bottom:16px}
+.sec-h{font-family:'Space Grotesk',sans-serif;font-size:clamp(40px,5.5vw,76px);font-weight:700;letter-spacing:-.03em;line-height:1;color:#0F2A1B;margin-bottom:24px;max-width:880px}
+.sec-h .accent{color:#16A34A}
+.sec-lead{font-size:19px;color:#4B5D54;max-width:680px;margin-bottom:50px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:#fff;padding:36px 30px;border-radius:16px;border:1px solid rgba(15,42,27,.06);transition:transform .2s}
+.svc:hover{transform:translateY(-4px)}
+.svc .icon{width:52px;height:52px;background:#DCFCE7;color:#16A34A;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:24px;font-weight:700}
+.svc h3{font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:600;margin-bottom:10px}
+.svc p{font-size:15px;color:#4B5D54}
+.compare{background:#0F2A1B;color:#fff}
+.compare .eyebrow{color:#86EFAC}
+.compare .sec-h{color:#fff}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:50px}
+.compare-card{padding:40px;border-radius:16px}
+.compare-card.them{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12)}
+.compare-card.us{background:#16A34A}
+.compare-card h3{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;margin-bottom:24px}
+.compare-card ul{list-style:none}
+.compare-card li{padding:14px 0;font-size:16px;border-top:1px solid rgba(255,255,255,.15);display:flex;gap:12px;align-items:center}
+.compare-card li:first-child{border-top:none}
+.compare-card.them li::before{content:'✕';color:#FCA5A5;font-weight:700}
+.compare-card.us li::before{content:'✓';font-weight:700}
+.cta-final{padding:120px 0;text-align:center;background:linear-gradient(180deg,#F4F8F1,#DCFCE7)}
+.cta-final h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(44px,6vw,84px);font-weight:700;letter-spacing:-.03em;color:#0F2A1B;margin-bottom:30px;line-height:1}
+.cta-final h2 .accent{color:#16A34A}
+footer{padding:60px 0 30px;background:#0F2A1B;color:rgba(255,255,255,.65)}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:50px;margin-bottom:40px}
+.foot-col h5{color:#86EFAC;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;font-weight:700}
+.foot-col p,.foot-col a{display:block;color:rgba(255,255,255,.65);text-decoration:none;font-size:14px;padding:5px 0}
+.demo-tag{position:fixed;bottom:24px;right:24px;background:#16A34A;color:#fff;padding:14px 22px;font-size:13px;font-weight:600;z-index:100;border-radius:999px}
+@media(max-width:900px){.svc-grid,.compare-grid,.price-strip,.foot-grid{grid-template-columns:1fr}.nav-links{display:none}section{padding:60px 0}}
+</style></head><body>
+<div class="alert">⚠️ Sales note: agent research found Yelp marked this business as &quot;closed&quot; in late 2025 — verify operating status before pitching.</div>
+<nav><div class="wrap nav-row">
+<div class="logo"><span class="logo-dot"></span>Atlanta Plumber<br><small style="font-weight:400;color:#16A34A">For Less.</small></div>
+<div class="nav-links"><a href="#services">Services</a><a href="#why">Why us</a><a href="#contact">Contact</a></div>
+<a href="tel:+1 404-753-9191" class="nav-cta">📞 Get a quote</a>
+</div></nav>
+<section class="hero"><div class="wrap">
+<div class="tag"><span class="pulse"></span> Same-day service · Sun–Sat 7a–7p</div>
+<h1>Plumbing done <span class="accent">right.</span><br>Priced <span class="strike">like everyone else's.</span> <span class="accent">Lower.</span></h1>
+<p>The other guys quoted $1,400. We did it for $620. Same parts, same warranty, same 5-year guarantee — just no corporate overhead getting tacked onto your bill.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap"><a href="tel:+1 404-753-9191" class="btn btn-primary">Get a free quote →</a><a href="#services" class="btn btn-secondary">See services</a></div>
+<div class="price-strip">
+<div class="p"><div class="num">4.3★</div><div class="lbl">63 Google reviews</div></div>
+<div class="p"><div class="num">$0</div><div class="lbl">free estimate</div></div>
+<div class="p"><div class="num">7-day</div><div class="lbl">availability</div></div>
+<div class="p"><div class="num">5yr</div><div class="lbl">workmanship warranty</div></div>
+</div></div></section>
+<section id="services"><div class="wrap">
+<div class="eyebrow">— What we fix</div>
+<h2 class="sec-h">Plumbing <span class="accent">without the markup.</span></h2>
+<p class="sec-lead">Repair, repipe, water heaters, drain cleaning, emergency calls. Same-day in metro Atlanta.</p>
+<div class="svc-grid">
+<div class="svc"><div class="icon">💧</div><h3>Repairs</h3><p>Leaks, clogs, burst pipes, running toilets — diagnosed and fixed in one visit.</p></div>
+<div class="svc"><div class="icon">🔧</div><h3>Repipe</h3><p>Whole-home repipes when galvanized or polybutylene needs to go. Fixed price, no surprises.</p></div>
+<div class="svc"><div class="icon">🚿</div><h3>Water heaters</h3><p>Tank, tankless, conversions. Honest sizing — not the biggest unit you can fit.</p></div>
+<div class="svc"><div class="icon">🚽</div><h3>Drains</h3><p>Snake, hydro-jet, camera scoping. Tell you what we find, show you the video.</p></div>
+<div class="svc"><div class="icon">🚨</div><h3>Emergency</h3><p>7am–7pm, every day. We pick up. We come out. We don&apos;t charge $300 to walk in the door.</p></div>
+<div class="svc"><div class="icon">🛁</div><h3>Remodels</h3><p>Bathroom rough-ins, fixture upgrades, gas lines. Working with your contractor or directly with you.</p></div>
+</div></div></section>
+<section class="compare" id="why"><div class="wrap">
+<div class="eyebrow">— Why &quot;for less&quot;</div>
+<h2 class="sec-h">Same job. <span style="color:#86EFAC">Half the bill.</span></h2>
+<div class="compare-grid">
+<div class="compare-card them"><h3>The big guys</h3><ul><li>$300+ &quot;trip charge&quot; before any work</li><li>Markup on every part &amp; fixture</li><li>Sales pitches for &quot;upgrades&quot; you don&apos;t need</li><li>Different tech every time</li><li>Corporate billing department</li></ul></div>
+<div class="compare-card us"><h3>Us</h3><ul><li>Free estimates, no trip charge</li><li>Parts at cost or near it</li><li>What you ask for — nothing extra</li><li>Same crew, every visit</li><li>Pay one person directly</li></ul></div>
+</div></div></section>
+<section><div class="wrap">
+<div class="eyebrow">— What customers say</div>
+<h2 class="sec-h">4.3★ across <span class="accent">63</span> Google reviews.</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px">
+
+<div style="background:#fff;padding:32px;border-radius:8px;border:2px dashed rgba(0,0,0,.12)">
+<div style="color:#9CA3AF;font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #1 —</div>
+<p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJvwVR078C9YgRoTtykBELSZk" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:#fff;padding:32px;border-radius:8px;border:2px dashed rgba(0,0,0,.12)">
+<div style="color:#9CA3AF;font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #2 —</div>
+<p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJvwVR078C9YgRoTtykBELSZk" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:#fff;padding:32px;border-radius:8px;border:2px dashed rgba(0,0,0,.12)">
+<div style="color:#9CA3AF;font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #3 —</div>
+<p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJvwVR078C9YgRoTtykBELSZk" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+</div></div></section>
+<section class="cta-final" id="contact"><div class="wrap">
+<h2>Got a leak?<br>Got a quote you don&apos;t want to pay?<br><span class="accent">Call us first.</span></h2>
+<p style="font-size:20px;color:#4B5D54;max-width:600px;margin:0 auto 40px">Free estimates. Same-day appointments. No tricks.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center"><a href="tel:+1 404-753-9191" class="btn btn-primary">📞 (404) 753-9191</a><a href="https://www.google.com/maps/place/Atlanta+Plumber+For+Less/@33.6817185,-84.4352571,14z/data=!4m8!1m2!2m1!1sAtlanta+Plumber+For+Less!3m4!1s0x88f502bfd35105bf:0x99490b1190723ba1!8m2!3d33.6817185!4d-84.4352571" target="_blank" class="btn btn-secondary">Read reviews →</a></div>
+</div></section>
+
+<section style="padding:80px 0;background:linear-gradient(180deg,rgba(0,0,0,.02),transparent)">
+<div style="max-width:1240px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+<div>
+<div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;opacity:.7;margin-bottom:16px">— On Google Maps</div>
+<h3 style="font-size:clamp(28px,3.5vw,48px);font-weight:600;line-height:1.1;margin-bottom:18px">Here&apos;s the spot.</h3>
+<p style="font-size:17px;opacity:.75;line-height:1.6">This is Atlanta Plumber For Less&apos;s actual Google Maps photo. Scraped April 2026.</p>
+</div>
+<img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=_gOVfRXDlq4gOGDnloq1gw&cb_client=search.gws-prod.gps&w=1600&h=900&yaw=0&pitch=0&thumbfov=100" alt="Atlanta Plumber For Less" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px;box-shadow:0 30px 60px -25px rgba(0,0,0,.25)" referrerpolicy="no-referrer">
+</div></section><footer><div class="wrap"><div class="foot-grid">
+<div><div class="logo" style="color:#fff;margin-bottom:14px"><span class="logo-dot"></span>Atlanta Plumber For Less</div><p style="font-size:14px;max-width:280px">Honest plumbing for metro Atlanta. No corporate overhead. No surprise bills.</p></div>
+<div class="foot-col"><h5>Visit</h5><p>2692 Harris St</p><p>Atlanta, GA 30344</p><p>Sun–Sat 7a–7p</p></div>
+<div class="foot-col"><h5>Contact</h5><a href="tel:+1 404-753-9191">(404) 753-9191</a><a href="https://www.google.com/maps/place/Atlanta+Plumber+For+Less/@33.6817185,-84.4352571,14z/data=!4m8!1m2!2m1!1sAtlanta+Plumber+For+Less!3m4!1s0x88f502bfd35105bf:0x99490b1190723ba1!8m2!3d33.6817185!4d-84.4352571" target="_blank">Google Maps →</a></div>
+<div class="foot-col"><h5>Reviews</h5><p>4.3★ Google · 63</p><a href="https://search.google.com/local/reviews?placeid=ChIJvwVR078C9YgRoTtykBELSZk" target="_blank">Read reviews →</a></div>
+</div><div style="padding-top:30px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;display:flex;justify-content:space-between"><div>© 2026 Atlanta Plumber For Less</div><div>Atlanta, GA</div></div></div></footer>
+<div class="demo-tag">Atlanta Plumber For Less</div>
+</body></html>

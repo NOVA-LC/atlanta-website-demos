@@ -1,0 +1,163 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><title>Atlanta Heating &amp; Cooling — Modern HVAC for Buckhead and beyond</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#fff;color:#0F172A;line-height:1.6;-webkit-font-smoothing:antialiased}
+.mono{font-family:'JetBrains Mono',monospace}
+.wrap{max-width:1320px;margin:0 auto;padding:0 32px}
+.notice{background:#FEF9C3;color:#713F12;padding:8px 0;font-size:12px;text-align:center;font-family:'JetBrains Mono',monospace}
+nav{padding:22px 0;border-bottom:1px solid #E2E8F0;background:#fff;position:sticky;top:0;z-index:50}
+.nav-row{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:18px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.logo span{display:inline-block;width:14px;height:14px;background:linear-gradient(135deg,#0EA5E9,#0369A1);border-radius:2px;transform:rotate(45deg)}
+.nav-links{display:flex;gap:30px;font-size:14px;font-weight:500}
+.nav-links a{color:#0F172A;text-decoration:none}
+.nav-cta{padding:11px 22px;background:#0F172A;color:#fff;text-decoration:none;font-weight:600;font-size:13px;border-radius:6px}
+.hero{padding:80px 0 60px;background:linear-gradient(180deg,rgba(255,255,255,.85),rgba(248,250,252,.95)),url("https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=1600&q=80") center/cover;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:50%;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(14,165,233,.08),transparent 70%);border-radius:50%}
+.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:60px;align-items:center;position:relative}
+.eyebrow-mono{font-family:'JetBrains Mono',monospace;font-size:12px;color:#0EA5E9;margin-bottom:24px;letter-spacing:.05em}
+.eyebrow-mono::before{content:'> ';color:#94A3B8}
+.hero h1{font-size:clamp(48px,7vw,120px);font-weight:800;letter-spacing:-.04em;line-height:.95;margin-bottom:32px}
+.hero h1 .highlight{background:linear-gradient(120deg,#0EA5E9,#0369A1);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:800}
+.hero p{font-size:19px;color:#475569;max-width:560px;margin-bottom:40px}
+.btn{padding:16px 28px;font-weight:600;text-decoration:none;font-size:15px;border-radius:8px;display:inline-flex;align-items:center;gap:10px}
+.btn-primary{background:#0F172A;color:#fff}
+.btn-secondary{background:#fff;color:#0F172A;border:1px solid #E2E8F0}
+.terminal{background:#0F172A;color:#E2E8F0;padding:28px;border-radius:12px;font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.7;border:1px solid #1E293B}
+.terminal .prompt{color:#0EA5E9}
+.terminal .out{color:#86EFAC}
+.terminal .key{color:#FBBF24}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid #E2E8F0;border-bottom:1px solid #E2E8F0;margin-top:80px}
+.stat-cell{padding:36px 24px;border-right:1px solid #E2E8F0}
+.stat-cell:last-child{border-right:none}
+.stat-cell .v{font-size:42px;font-weight:800;letter-spacing:-.03em;line-height:1;color:#0F172A}
+.stat-cell .v span{color:#0EA5E9}
+.stat-cell .l{font-size:12px;font-family:'JetBrains Mono',monospace;color:#64748B;margin-top:8px;letter-spacing:.05em}
+section{padding:100px 0}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:13px;color:#0EA5E9;margin-bottom:18px;letter-spacing:.05em}
+.eyebrow::before{content:'> ';color:#94A3B8}
+.sec-h{font-size:clamp(40px,5.5vw,76px);font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:24px;max-width:880px}
+.sec-h .highlight{background:linear-gradient(120deg,#0EA5E9,#0369A1);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sec-lead{font-size:18px;color:#475569;max-width:680px;margin-bottom:60px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#E2E8F0;border:1px solid #E2E8F0;border-radius:12px;overflow:hidden}
+.svc{background:#fff;padding:36px}
+.svc-tag{display:inline-block;background:#EFF6FF;color:#0369A1;padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;border-radius:4px;margin-bottom:18px;letter-spacing:.05em}
+.svc h3{font-size:22px;font-weight:700;letter-spacing:-.02em;margin-bottom:12px}
+.svc p{font-size:14px;color:#64748B;line-height:1.65}
+.coverage{background:#0F172A;color:#fff;border-radius:24px;padding:80px 60px;margin:0 32px}
+.coverage .eyebrow{color:#0EA5E9}
+.coverage .sec-h{color:#fff}
+.coverage .sec-h .highlight{background:linear-gradient(120deg,#0EA5E9,#86EFAC);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.areas{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.area{padding:18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:14px}
+.area::before{content:'> ';color:#0EA5E9}
+.cta-final{padding:120px 0;text-align:center}
+.cta-final h2{font-size:clamp(44px,6vw,84px);font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:30px}
+.cta-final h2 .highlight{background:linear-gradient(120deg,#0EA5E9,#0369A1);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+footer{padding:60px 0 30px;border-top:1px solid #E2E8F0}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:50px;margin-bottom:40px}
+.foot-col h5{font-family:'JetBrains Mono',monospace;font-size:12px;color:#0EA5E9;margin-bottom:14px;letter-spacing:.05em}
+.foot-col p,.foot-col a{display:block;color:#64748B;text-decoration:none;font-size:14px;padding:5px 0}
+.demo-tag{position:fixed;bottom:24px;right:24px;background:#0F172A;color:#fff;padding:14px 22px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;z-index:100;border-radius:6px}
+@media(max-width:900px){.hero-grid,.svc-grid,.foot-grid,.stats-row,.areas{grid-template-columns:1fr}.stat-cell{border-right:none;border-bottom:1px solid #E2E8F0}.nav-links{display:none}section{padding:60px 0}.coverage{padding:50px 30px;margin:0}}
+</style></head><body>
+<div class="notice">⚠ Sales note: Verify business is genuinely active and distinct from similarly-named Atlanta HVAC competitors before pitching.</div>
+<nav><div class="wrap nav-row">
+<div class="logo"><span></span>atlanta-hvac.io</div>
+<div class="nav-links"><a href="#services">Services</a><a href="#coverage">Coverage</a><a href="#book">Book</a></div>
+<a href="tel:+1 470-910-0876" class="nav-cta">📞 Book service</a>
+</div></nav>
+<section class="hero"><div class="wrap"><div class="hero-grid">
+<div>
+<div class="eyebrow-mono">atlanta · since 2020 · 4.7★ rated</div>
+<h1>HVAC done <span class="highlight">like software:</span> precise, fast, transparent.</h1>
+<p>Real-time appointment scheduling. Photo proof of work. Diagnostic notes you can actually read. We&apos;re bringing 21st-century service to a 20th-century industry.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap"><a href="tel:+1 470-910-0876" class="btn btn-primary">Book a service →</a><a href="#services" class="btn btn-secondary">View capabilities</a></div>
+</div>
+<div>
+<div class="terminal">
+<span class="prompt">$</span> book.appointment --type=diagnostic<br>
+<span class="out">✓</span> next available: <span class="key">today, 2:30pm</span><br>
+<span class="out">✓</span> tech assigned: <span class="key">marcus</span><br>
+<span class="out">✓</span> est. arrival: <span class="key">2:18 – 2:35pm</span><br>
+<span class="out">✓</span> diagnostic fee: <span class="key">$0</span><br>
+<span class="out">✓</span> sms updates: <span class="key">enabled</span><br><br>
+<span class="prompt">$</span> book.confirm<br>
+<span class="out">✓ confirmed.</span> see you soon.
+</div></div>
+</div>
+<div class="stats-row">
+<div class="stat-cell"><div class="v">4.7<span>★</span></div><div class="l">// google rating</div></div>
+<div class="stat-cell"><div class="v">23</div><div class="l">// verified reviews</div></div>
+<div class="stat-cell"><div class="v">2hr</div><div class="l">// avg response</div></div>
+<div class="stat-cell"><div class="v">7d</div><div class="l">// available daily</div></div>
+</div></div></section>
+<section id="services"><div class="wrap">
+<div class="eyebrow">/services</div>
+<h2 class="sec-h">Six things we do <span class="highlight">extremely well.</span></h2>
+<p class="sec-lead">No subcontractors. No bait pricing. No upsell scripts.</p>
+<div class="svc-grid">
+<div class="svc"><div class="svc-tag">repair</div><h3>System diagnostics</h3><p>30-point inspection with photo documentation. You get the report.</p></div>
+<div class="svc"><div class="svc-tag">install</div><h3>System replacement</h3><p>Manual J load sizing. Right-sized equipment. Clean install, every time.</p></div>
+<div class="svc"><div class="svc-tag">maintenance</div><h3>Seasonal tune-ups</h3><p>Spring + fall service plans. Catch the $80 problem before the $4k breakdown.</p></div>
+<div class="svc"><div class="svc-tag">ductwork</div><h3>Duct sealing &amp; design</h3><p>Aeroseal where it makes sense. New runs where it doesn&apos;t. Better airflow, lower bills.</p></div>
+<div class="svc"><div class="svc-tag">air quality</div><h3>IAQ &amp; filtration</h3><p>HEPA, UV, dehumidification. Especially for Atlanta&apos;s humid summers.</p></div>
+<div class="svc"><div class="svc-tag">emergency</div><h3>24/7 emergency</h3><p>Real technicians on-call. Two-hour response across the metro.</p></div>
+</div></div></section>
+<section><div class="coverage" id="coverage">
+<div class="eyebrow">/coverage</div>
+<h2 class="sec-h">Serving the <span class="highlight">whole metro.</span></h2>
+<p class="sec-lead" style="color:rgba(255,255,255,.7)">Headquartered on Peachtree Rd. Crews dispatched daily across 15+ neighborhoods.</p>
+<div class="areas">
+<div class="area">Buckhead</div><div class="area">Brookhaven</div><div class="area">Sandy Springs</div><div class="area">Druid Hills</div>
+<div class="area">Decatur</div><div class="area">Virginia-Highland</div><div class="area">Midtown</div><div class="area">Inman Park</div>
+<div class="area">Morningside</div><div class="area">Smyrna</div><div class="area">Marietta</div><div class="area">Vinings</div>
+</div></div></section>
+<section><div class="wrap">
+<div class="eyebrow">/reviews</div>
+<h2 class="sec-h">4.7★ across <span class="highlight">23</span> Google reviews.</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px">
+
+<div style="background:#fff;padding:32px;border-radius:8px;border:2px dashed rgba(0,0,0,.12)">
+<div style="color:#9CA3AF;font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #1 —</div>
+<p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJA5PtW_zc84gRM4_WJEA9ab4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:#fff;padding:32px;border-radius:8px;border:2px dashed rgba(0,0,0,.12)">
+<div style="color:#9CA3AF;font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #2 —</div>
+<p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJA5PtW_zc84gRM4_WJEA9ab4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:#fff;padding:32px;border-radius:8px;border:2px dashed rgba(0,0,0,.12)">
+<div style="color:#9CA3AF;font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #3 —</div>
+<p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJA5PtW_zc84gRM4_WJEA9ab4" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+</div></div></section>
+<section class="cta-final" id="book"><div class="wrap">
+<h2>Ready when <span class="highlight">you are.</span></h2>
+<p style="font-size:19px;color:#475569;max-width:560px;margin:0 auto 40px">Book online, call directly, or text us. Whichever&apos;s easier.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center"><a href="tel:+1 470-910-0876" class="btn btn-primary">📞 (470) 910-0876</a><a href="https://www.google.com/maps/place/Atlanta+Heating+And+Cooling/@33.8048924,-84.393866,14z/data=!4m8!1m2!2m1!1sAtlanta+Heating+And+Cooling!3m4!1s0x88f3dcfc5bed9303:0xbe693d4024d68f33!8m2!3d33.8048924!4d-84.393866" target="_blank" class="btn btn-secondary">View on Maps →</a></div>
+</div></section>
+
+<section style="padding:80px 0;background:linear-gradient(180deg,rgba(0,0,0,.02),transparent)">
+<div style="max-width:1240px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+<div>
+<div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;opacity:.7;margin-bottom:16px">— On Google Maps</div>
+<h3 style="font-size:clamp(28px,3.5vw,48px);font-weight:600;line-height:1.1;margin-bottom:18px">Here&apos;s the spot.</h3>
+<p style="font-size:17px;opacity:.75;line-height:1.6">This is Atlanta Heating & Cooling&apos;s actual Google Maps photo. Scraped April 2026.</p>
+</div>
+<img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAE7usl6aCtEw-OXVmbX-m0icw8XNIW5TGCDWDt6IH-sBsKFN_7Cm" alt="Atlanta Heating & Cooling" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px;box-shadow:0 30px 60px -25px rgba(0,0,0,.25)" referrerpolicy="no-referrer">
+</div></section><footer><div class="wrap"><div class="foot-grid">
+<div><div class="logo" style="margin-bottom:14px"><span></span>atlanta-hvac.io</div><p style="font-size:14px;color:#64748B;max-width:280px">Modern HVAC for the metro. Diagnostic-first, transparent pricing, no subcontractors.</p></div>
+<div class="foot-col"><h5>./visit</h5><p>3232 Peachtree Rd NW</p><p>Atlanta, GA 30305</p><p>Mon–Sat 8a–8p · Sun 9a–7p</p></div>
+<div class="foot-col"><h5>./contact</h5><a href="tel:+1 470-910-0876">(470) 910-0876</a><a href="https://www.google.com/maps/place/Atlanta+Heating+And+Cooling/@33.8048924,-84.393866,14z/data=!4m8!1m2!2m1!1sAtlanta+Heating+And+Cooling!3m4!1s0x88f3dcfc5bed9303:0xbe693d4024d68f33!8m2!3d33.8048924!4d-84.393866" target="_blank">google maps →</a></div>
+<div class="foot-col"><h5>./reviews</h5><p>4.7★ (23)</p><a href="https://search.google.com/local/reviews?placeid=ChIJA5PtW_zc84gRM4_WJEA9ab4" target="_blank">read all →</a></div>
+</div><div style="padding-top:30px;border-top:1px solid #E2E8F0;font-size:12px;font-family:'JetBrains Mono',monospace;display:flex;justify-content:space-between;color:#94A3B8"><div>© 2026 atlanta-heating-and-cooling // Atlanta, GA</div><div>v.1.0.0</div></div></div></footer>
+<div class="demo-tag">Atlanta H&amp;C</div>
+</body></html>

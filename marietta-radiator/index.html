@@ -1,0 +1,140 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><title>Marietta Radiator Service — Specialists since 1975</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#F1ECE0;color:#1B2530;line-height:1.6}
+.wrap{max-width:1320px;margin:0 auto;padding:0 30px}
+.top-strip{background:#1B2530;color:#F1ECE0;padding:8px 0;font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-align:center;font-weight:500}
+.top-strip span{color:#D4663E}
+nav{padding:22px 0;border-bottom:2px solid #1B2530;background:#F1ECE0}
+.nav-row{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:14px}
+.logo-mark{width:50px;height:50px;background:#1B2530;color:#F1ECE0;display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:700;font-size:22px;border-radius:50%;border:3px double #D4663E}
+.logo-text{font-family:'Oswald',sans-serif;font-size:20px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#1B2530;line-height:1}
+.logo-text small{display:block;font-family:'Crimson Pro',serif;font-style:italic;font-size:13px;font-weight:400;text-transform:none;letter-spacing:0;color:#D4663E;margin-top:4px}
+.nav-links{display:flex;gap:32px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.1em}
+.nav-links a{color:#1B2530;text-decoration:none}
+.nav-cta{padding:14px 22px;background:#D4663E;color:#F1ECE0;text-decoration:none;font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.1em}
+.hero{padding:60px 0;background:linear-gradient(rgba(241,236,224,.88),rgba(241,236,224,.92)),url("https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1600&q=80") center/cover}
+.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:60px;align-items:center}
+.hero-est{display:inline-flex;align-items:center;gap:14px;background:#1B2530;color:#F1ECE0;padding:10px 18px;font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;margin-bottom:30px}
+.hero-est .dot{width:8px;height:8px;background:#D4663E;border-radius:50%}
+.hero h1{font-family:'Oswald',sans-serif;font-size:clamp(56px,9vw,148px);font-weight:700;color:#1B2530;text-transform:uppercase;line-height:.88;margin-bottom:30px}
+.hero h1 span{color:#D4663E;font-style:italic;font-family:'Crimson Pro',serif;text-transform:none;font-weight:500}
+.hero-sub{font-family:'Crimson Pro',serif;font-size:22px;color:#3D5163;max-width:520px;margin-bottom:36px;font-style:italic}
+.btn{padding:18px 32px;font-family:'Oswald',sans-serif;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.15em;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+.btn-primary{background:#1B2530;color:#F1ECE0}
+.btn-secondary{background:transparent;color:#1B2530;border:2px solid #1B2530}
+.badge-medallion{aspect-ratio:1;background:#1B2530;color:#F1ECE0;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:6px double #D4663E;padding:40px}
+.badge-yr{font-family:'Crimson Pro',serif;font-style:italic;font-size:18px;color:#D4663E;letter-spacing:.1em;margin-bottom:8px}
+.badge-num{font-family:'Oswald',sans-serif;font-weight:700;font-size:120px;line-height:.85;color:#F1ECE0}
+.badge-label{font-family:'Oswald',sans-serif;font-size:14px;letter-spacing:.3em;color:#D4663E;margin-top:12px;text-transform:uppercase}
+.trades{background:#1B2530;color:#F1ECE0;padding:38px 0;border-top:6px double #D4663E;border-bottom:6px double #D4663E}
+.trades-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}
+.trade .num{font-family:'Oswald',sans-serif;font-weight:600;font-size:48px;color:#D4663E;line-height:1}
+.trade .lbl{font-family:'Crimson Pro',serif;font-style:italic;font-size:15px;margin-top:6px}
+section{padding:110px 0}
+.eyebrow{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:#D4663E;margin-bottom:18px;font-weight:600}
+.sec-h{font-family:'Oswald',sans-serif;font-size:clamp(46px,6.5vw,90px);font-weight:600;text-transform:uppercase;line-height:.95;color:#1B2530;margin-bottom:30px}
+.sec-h em{font-family:'Crimson Pro',serif;font-style:italic;font-weight:500;color:#D4663E;text-transform:none}
+.sec-lead{font-family:'Crimson Pro',serif;font-style:italic;font-size:21px;color:#3D5163;max-width:680px;margin-bottom:60px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.svc{padding:50px 40px;border-right:1px solid #1B2530;border-bottom:1px solid #1B2530}
+.svc:nth-child(3n){border-right:none}
+.svc-num{font-family:'Crimson Pro',serif;font-style:italic;color:#D4663E;font-size:22px;margin-bottom:14px}
+.svc h3{font-family:'Oswald',sans-serif;font-size:24px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px}
+.svc p{color:#3D5163;font-size:15px;line-height:1.7}
+.reviews{background:#1B2530;color:#F1ECE0}
+.reviews .eyebrow{color:#D4663E}
+.reviews .sec-h{color:#F1ECE0}
+.cta-final{padding:120px 0;text-align:center;background:#F1ECE0}
+.cta-final h2{font-family:'Oswald',sans-serif;font-size:clamp(48px,7vw,108px);font-weight:700;text-transform:uppercase;line-height:.92;color:#1B2530;margin-bottom:30px}
+.cta-final h2 em{font-family:'Crimson Pro',serif;font-style:italic;color:#D4663E;font-weight:500;text-transform:none}
+footer{background:#1B2530;color:rgba(241,236,224,.6);padding:50px 0 30px;border-top:6px double #D4663E}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:50px;margin-bottom:40px}
+.foot-col h5{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px;color:#F1ECE0}
+.foot-col p,.foot-col a{display:block;color:rgba(241,236,224,.6);text-decoration:none;font-size:14px;padding:5px 0}
+.demo-tag{position:fixed;bottom:24px;right:24px;background:#D4663E;color:#F1ECE0;padding:14px 22px;font-family:'Oswald',sans-serif;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.15em;z-index:100}
+@media(max-width:900px){.hero-grid,.foot-grid{grid-template-columns:1fr}.nav-links{display:none}.svc-grid,.trades-grid{grid-template-columns:1fr}.svc{border-right:none}section{padding:60px 0}}
+</style></head><body>
+<div class="top-strip">📞 (770) 428-7120 · Mon–Fri 8a–5:30p · <span>Specialists since 1975</span></div>
+<nav><div class="wrap nav-row">
+<div class="logo"><div class="logo-mark">M</div><div class="logo-text">Marietta Radiator Service<small>est. 1975 · Marietta, Georgia</small></div></div>
+<div class="nav-links"><a href="#services">Services</a><a href="#shop">Visit shop</a><a href="#reviews">Reviews</a></div>
+<a href="tel:+1 770-428-7120" class="nav-cta">Call now</a>
+</div></nav>
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<div class="hero-est"><span class="dot"></span> Specialists since 1975</div>
+<h1>The shop <span>your dad</span> would have used.</h1>
+<p class="hero-sub">For half a century we&apos;ve fixed one thing: radiators. Auto, industrial, classic — copper, brass, aluminum. The dealership wants $1,800 to swap a radiator they could&apos;ve fixed in two hours. Bring it here first.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap"><a href="tel:+1 770-428-7120" class="btn btn-primary">Call · (770) 428-7120</a><a href="#services" class="btn btn-secondary">What we do →</a></div>
+</div>
+<div><div class="badge-medallion"><div class="badge-yr">— Established —</div><div class="badge-num">1975</div><div class="badge-label">Marietta · GA</div></div></div>
+</div></section>
+<div class="trades"><div class="wrap trades-grid">
+<div class="trade"><div class="num">50+</div><div class="lbl">years on Glover Street</div></div>
+<div class="trade"><div class="num">4.9★</div><div class="lbl">across 65 Google reviews</div></div>
+<div class="trade"><div class="num">$0</div><div class="lbl">diagnostic fee</div></div>
+<div class="trade"><div class="num">Walk-ins</div><div class="lbl">no appointment needed</div></div>
+</div></div>
+<section id="services"><div class="wrap">
+<div class="eyebrow">— What we handle</div>
+<h2 class="sec-h">One trade.<br><em>Mastered.</em></h2>
+<p class="sec-lead">We don&apos;t do oil changes. We don&apos;t sell tires. Every radiator that crosses Glover Street gets the same fifty-plus years of know-how.</p>
+<div class="svc-grid">
+<div class="svc"><div class="svc-num">— No. 01</div><h3>Auto<br>radiators</h3><p>Domestic, foreign, fleet, diesel. Repair when it can be repaired, replace when it can&apos;t. We tell you which is which — honestly.</p></div>
+<div class="svc"><div class="svc-num">— No. 02</div><h3>Classic<br>recoring</h3><p>Copper-brass radiators for Mustangs, Camaros, Chevelles, Mopars. We rebuild what the chain shops won&apos;t even look at.</p></div>
+<div class="svc"><div class="svc-num">— No. 03</div><h3>Industrial<br>cooling</h3><p>Heavy equipment, generators, ag, marine. If it has a radiator, we&apos;ve probably fixed one like it.</p></div>
+<div class="svc"><div class="svc-num">— No. 04</div><h3>Heater<br>cores</h3><p>Every winter we save people from a $1,500 dashboard removal. We rebuild the core and ship it back.</p></div>
+<div class="svc"><div class="svc-num">— No. 05</div><h3>Vintage A/C<br>retrofits</h3><p>R-12 to R-134a conversions for classic cars. We&apos;ve been doing it since the EPA changed the rules.</p></div>
+<div class="svc"><div class="svc-num">— No. 06</div><h3>Custom hose<br>fittings</h3><p>Hose blew, dealer doesn&apos;t carry it? We fabricate. Most fittings, same day.</p></div>
+</div></div></section>
+<section class="reviews" id="reviews"><div class="wrap">
+<div class="eyebrow">— What customers say</div>
+<h2 class="sec-h">65 reviews. <em>4.9 stars.</em></h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px">
+
+<div style="background:rgba(255,255,255,.06);padding:32px;border-radius:8px;border:2px dashed rgba(255,255,255,.18)">
+<div style="color:rgba(255,255,255,.55);font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #1 —</div>
+<p style="font-size:15px;line-height:1.65;color:#fff;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJ_-EXS6EW9YgREbCFeIpDuTw" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:rgba(255,255,255,.06);padding:32px;border-radius:8px;border:2px dashed rgba(255,255,255,.18)">
+<div style="color:rgba(255,255,255,.55);font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #2 —</div>
+<p style="font-size:15px;line-height:1.65;color:#fff;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJ_-EXS6EW9YgREbCFeIpDuTw" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:rgba(255,255,255,.06);padding:32px;border-radius:8px;border:2px dashed rgba(255,255,255,.18)">
+<div style="color:rgba(255,255,255,.55);font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #3 —</div>
+<p style="font-size:15px;line-height:1.65;color:#fff;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJ_-EXS6EW9YgREbCFeIpDuTw" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+</div></div></section>
+<section class="cta-final" id="shop"><div class="wrap">
+<h2>Got a leak?<br>Got a hot needle?<br><em>Bring it on by.</em></h2>
+<p style="font-family:'Crimson Pro',serif;font-style:italic;font-size:22px;color:#3D5163;max-width:600px;margin:0 auto 40px">Walk in. No appointment. Free diagnosis.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center"><a href="tel:+1 770-428-7120" class="btn btn-primary">📞 (770) 428-7120</a><a href="https://www.google.com/maps/place/Marietta+Radiator+Service/@33.9390296,-84.5386276,14z/data=!4m8!1m2!2m1!1sMarietta+Radiator+Service!3m4!1s0x88f516a14b17e1ff:0x3cb9438a7885b011!8m2!3d33.9390296!4d-84.5386276" target="_blank" class="btn btn-secondary">Get directions →</a></div>
+</div></section>
+
+<section style="padding:80px 0;background:linear-gradient(180deg,rgba(0,0,0,.02),transparent)">
+<div style="max-width:1240px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+<div>
+<div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;opacity:.7;margin-bottom:16px">— On Google Maps</div>
+<h3 style="font-size:clamp(28px,3.5vw,48px);font-weight:600;line-height:1.1;margin-bottom:18px">Here&apos;s the spot.</h3>
+<p style="font-size:17px;opacity:.75;line-height:1.6">This is Marietta Radiator Service&apos;s actual Google Maps photo. Scraped April 2026.</p>
+</div>
+<img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHZQzvDWWe645dvO1WBsPwnpw6DAG4dQo_3L6l22etDJCMAOPKFg" alt="Marietta Radiator Service" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px;box-shadow:0 30px 60px -25px rgba(0,0,0,.25)" referrerpolicy="no-referrer">
+</div></section><footer><div class="wrap"><div class="foot-grid">
+<div>
+<div class="logo" style="margin-bottom:16px"><div class="logo-mark">M</div><div class="logo-text" style="color:#F1ECE0">Marietta Radiator Service<small>est. 1975</small></div></div>
+<p style="font-size:14px;max-width:340px">A specialty radiator shop on Glover Street. Sales note: Owner research suggests Tommy Kemp, President — verify before pitch.</p></div>
+<div class="foot-col"><h5>Visit</h5><p>487 Glover St SE</p><p>Marietta, GA 30060</p><p>Mon–Fri 8a–5:30p</p></div>
+<div class="foot-col"><h5>Contact</h5><a href="tel:+1 770-428-7120">(770) 428-7120</a><a href="https://www.google.com/maps/place/Marietta+Radiator+Service/@33.9390296,-84.5386276,14z/data=!4m8!1m2!2m1!1sMarietta+Radiator+Service!3m4!1s0x88f516a14b17e1ff:0x3cb9438a7885b011!8m2!3d33.9390296!4d-84.5386276" target="_blank">Google Maps →</a></div>
+</div><div style="padding-top:30px;border-top:1px solid rgba(241,236,224,.15);font-size:13px;display:flex;justify-content:space-between"><div>© 2026 Marietta Radiator Service · Established 1975</div><div>4.9★ Google · 65 reviews</div></div></div></footer>
+<div class="demo-tag">Marietta Radiator</div>
+</body></html>

@@ -1,0 +1,151 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><title>DA Plumbing &amp; Septic — Cobb County&apos;s 24/7 emergency plumber</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#F5F7FA;color:#0F1F2E;line-height:1.6;-webkit-font-smoothing:antialiased}
+.display{font-family:'Archivo Black',sans-serif;letter-spacing:-.02em;line-height:.9}
+.wrap{max-width:1280px;margin:0 auto;padding:0 28px}
+.alert-band{background:#FF6B35;color:#fff;padding:10px 0;text-align:center;font-weight:700;font-size:13px;letter-spacing:.05em}
+nav{background:#0F1F2E;color:#fff;padding:18px 0}
+.nav-row{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:14px;font-family:'Archivo Black',sans-serif;font-size:24px;letter-spacing:-.02em}
+.logo-mark{width:48px;height:48px;background:#FF6B35;color:#0F1F2E;display:flex;align-items:center;justify-content:center;font-family:'Archivo Black',sans-serif;font-size:22px}
+.nav-links{display:flex;gap:30px;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+.nav-links a{color:#fff;text-decoration:none;opacity:.85}
+.nav-cta{padding:14px 22px;background:#FF6B35;color:#0F1F2E;text-decoration:none;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.05em;font-family:'Archivo Black',sans-serif}
+.hero{padding:80px 0 60px;background:linear-gradient(135deg,rgba(15,31,46,.85) 0%,rgba(26,51,68,.92) 100%),url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1600&q=80") center/cover;color:#fff;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-100px;right:-100px;width:500px;height:500px;background:repeating-linear-gradient(45deg,rgba(255,107,53,.05) 0,rgba(255,107,53,.05) 2px,transparent 2px,transparent 14px);transform:rotate(15deg)}
+.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:60px;align-items:center;position:relative;z-index:2}
+.alert-tag{display:inline-flex;align-items:center;gap:10px;background:#FF6B35;color:#0F1F2E;padding:10px 18px;font-family:'Archivo Black',sans-serif;font-size:13px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:30px}
+.alert-tag::before{content:'●';animation:pulse 1s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-family:'Archivo Black',sans-serif;font-size:clamp(58px,9vw,148px);line-height:.88;letter-spacing:-.03em;margin-bottom:30px}
+.hero h1 .accent{color:#FF6B35}
+.hero p{font-size:20px;color:rgba(255,255,255,.78);max-width:560px;margin-bottom:36px}
+.btn{padding:18px 32px;font-family:'Archivo Black',sans-serif;font-size:15px;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+.btn-primary{background:#FF6B35;color:#0F1F2E}
+.btn-secondary{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.3)}
+.dispatch-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,107,53,.3);padding:36px;backdrop-filter:blur(10px)}
+.dispatch-card h3{font-family:'Archivo Black',sans-serif;font-size:22px;color:#FF6B35;margin-bottom:24px;letter-spacing:.05em}
+.dispatch-card .row{display:flex;justify-content:space-between;padding:14px 0;border-top:1px solid rgba(255,255,255,.1);font-size:15px}
+.dispatch-card .row:first-of-type{border-top:none}
+.dispatch-card .row strong{color:#fff;font-weight:700}
+.dispatch-card .row span{color:#FF6B35;font-family:'Archivo Black',sans-serif;font-size:14px;letter-spacing:.05em;text-transform:uppercase}
+section{padding:100px 0}
+.eyebrow{font-family:'Archivo Black',sans-serif;font-size:14px;letter-spacing:.15em;text-transform:uppercase;color:#FF6B35;margin-bottom:14px}
+.sec-h{font-family:'Archivo Black',sans-serif;font-size:clamp(46px,6.5vw,96px);line-height:.92;letter-spacing:-.02em;color:#0F1F2E;margin-bottom:24px;max-width:900px}
+.sec-h .accent{color:#FF6B35}
+.sec-lead{font-size:18px;color:#475977;max-width:680px;margin-bottom:50px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:2px solid #0F1F2E}
+.svc{padding:36px;border-right:2px solid #0F1F2E;border-bottom:2px solid #0F1F2E}
+.svc:nth-child(3n){border-right:none}
+.svc:nth-last-child(-n+3){border-bottom:none}
+.svc-num{font-family:'Archivo Black',sans-serif;font-size:20px;color:#FF6B35;margin-bottom:14px;letter-spacing:.05em}
+.svc h3{font-family:'Archivo Black',sans-serif;font-size:24px;margin-bottom:12px;text-transform:uppercase;letter-spacing:-.01em}
+.svc p{font-size:14px;color:#475977}
+.area-band{background:#0F1F2E;color:#fff;padding:80px 0}
+.area-band .eyebrow{color:#FF6B35}
+.area-band .sec-h{color:#fff}
+.area-band .sec-h .accent{color:#FF6B35}
+.area-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:40px}
+.area-tile{padding:18px;background:rgba(255,255,255,.04);border:2px solid rgba(255,107,53,.3);text-align:center;font-family:'Archivo Black',sans-serif;font-size:14px;letter-spacing:.05em;text-transform:uppercase}
+.cta-final{padding:120px 0;text-align:center;background:linear-gradient(135deg,#FF6B35 0%,#E85423 100%);color:#0F1F2E}
+.cta-final h2{font-family:'Archivo Black',sans-serif;font-size:clamp(48px,7vw,128px);line-height:.9;letter-spacing:-.03em;margin-bottom:30px}
+footer{padding:50px 0 30px;background:#0F1F2E;color:rgba(255,255,255,.6)}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:50px;margin-bottom:40px}
+.foot-col h5{font-family:'Archivo Black',sans-serif;font-size:13px;color:#FF6B35;margin-bottom:14px;letter-spacing:.1em;text-transform:uppercase}
+.foot-col p,.foot-col a{display:block;color:rgba(255,255,255,.6);text-decoration:none;font-size:14px;padding:5px 0}
+.demo-tag{position:fixed;bottom:24px;right:24px;background:#FF6B35;color:#0F1F2E;padding:14px 22px;font-family:'Archivo Black',sans-serif;font-size:13px;letter-spacing:.05em;text-transform:uppercase;z-index:100}
+@media(max-width:900px){.hero-grid,.svc-grid,.area-grid,.foot-grid{grid-template-columns:1fr}.nav-links{display:none}.svc{border-right:none}section{padding:60px 0}}
+</style></head><body>
+<div class="alert-band">⚠️ EMERGENCY? CALL (470) 412-0062 — DISPATCH AVAILABLE 24/7</div>
+<nav><div class="wrap nav-row">
+<div class="logo"><div class="logo-mark">DA</div>PLUMBING<br>&amp; SEPTIC</div>
+<div class="nav-links"><a href="#services">Services</a><a href="#area">Area</a><a href="#dispatch">Dispatch</a></div>
+<a href="tel:+1 470-412-0062" class="nav-cta">📞 Call dispatch</a>
+</div></nav>
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<div class="alert-tag">24/7 Emergency Dispatch · Cobb County</div>
+<h1>Septic backup<br>at <span class="accent">3am?</span><br>We&apos;re already <span class="accent">in the truck.</span></h1>
+<p>Plumbing AND septic. One call, one crew. 5.0 stars across 12 reviews — every single one earned at someone&apos;s worst moment.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap"><a href="tel:+1 470-412-0062" class="btn btn-primary">📞 (470) 412-0062</a><a href="#services" class="btn btn-secondary">Our services</a></div>
+</div>
+<div>
+<div class="dispatch-card">
+<h3>— Live dispatch status —</h3>
+<div class="row"><strong>Crews on call</strong><span>2 / 2 ready</span></div>
+<div class="row"><strong>Avg arrival</strong><span>under 90 min</span></div>
+<div class="row"><strong>Service radius</strong><span>25 miles</span></div>
+<div class="row"><strong>Today</strong><span>open all day</span></div>
+<div class="row"><strong>Tonight</strong><span>on-call</span></div>
+<div class="row"><strong>Tomorrow</strong><span>fully booked? no</span></div>
+</div></div>
+</div></section>
+<section id="services"><div class="wrap">
+<div class="eyebrow">— What we handle</div>
+<h2 class="sec-h">Plumbing.<br>Septic.<br><span class="accent">Both. Always.</span></h2>
+<p class="sec-lead">Most Cobb County companies do one or the other. We do both — which means one phone call, one diagnosis, one bill, and one company that sees the whole system.</p>
+<div class="svc-grid">
+<div class="svc"><div class="svc-num">— 01</div><h3>Septic pumping</h3><p>Routine pumping. Tank locating. Lid replacement. Drain field assessment. Schedule before it backs up.</p></div>
+<div class="svc"><div class="svc-num">— 02</div><h3>Backup emergencies</h3><p>3am sewage in the basement? We&apos;re on the way. Equipment for the worst case, every truck.</p></div>
+<div class="svc"><div class="svc-num">— 03</div><h3>Drain field repair</h3><p>Failing field, slow drains, soggy yard. We diagnose, repair when we can, replace when we must.</p></div>
+<div class="svc"><div class="svc-num">— 04</div><h3>Plumbing repair</h3><p>Leaks, clogs, water heaters, fixture replacement, gas lines. Full residential plumbing.</p></div>
+<div class="svc"><div class="svc-num">— 05</div><h3>Inspections</h3><p>Pre-purchase septic + plumbing inspections. Written reports. Insurance &amp; lender accepted.</p></div>
+<div class="svc"><div class="svc-num">— 06</div><h3>New installs</h3><p>New tank, new system, new build. Permitting, install, inspection — we handle the whole pipeline.</p></div>
+</div></div></section>
+<section class="area-band" id="area"><div class="wrap">
+<div class="eyebrow">— Where we work</div>
+<h2 class="sec-h">All of <span class="accent">Cobb County.</span></h2>
+<p class="sec-lead" style="color:rgba(255,255,255,.7)">25-mile dispatch radius from Smyrna. If your house has a septic tank in Cobb, we know your soil.</p>
+<div class="area-grid">
+<div class="area-tile">Smyrna</div><div class="area-tile">Marietta</div><div class="area-tile">Vinings</div><div class="area-tile">Mableton</div><div class="area-tile">Powder Springs</div>
+<div class="area-tile">Kennesaw</div><div class="area-tile">Acworth</div><div class="area-tile">Austell</div><div class="area-tile">Lithia Springs</div><div class="area-tile">Dallas</div>
+</div></div></section>
+<section><div class="wrap">
+<div class="eyebrow">— Reviews</div>
+<h2 class="sec-h">5.0★ across <span class="accent">12</span> Google reviews.</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px">
+
+<div style="background:#fff;padding:32px;border-radius:8px;border:2px dashed rgba(0,0,0,.12)">
+<div style="color:#9CA3AF;font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #1 —</div>
+<p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJ91NJcLcR9YgR-JmkwlT5fxY" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:#fff;padding:32px;border-radius:8px;border:2px dashed rgba(0,0,0,.12)">
+<div style="color:#9CA3AF;font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #2 —</div>
+<p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJ91NJcLcR9YgR-JmkwlT5fxY" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:#fff;padding:32px;border-radius:8px;border:2px dashed rgba(0,0,0,.12)">
+<div style="color:#9CA3AF;font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #3 —</div>
+<p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJ91NJcLcR9YgR-JmkwlT5fxY" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+</div></div></section>
+<section class="cta-final" id="dispatch"><div class="wrap">
+<h2>WATER WHERE IT<br>SHOULDN&apos;T BE?<br><span style="color:#0F1F2E;background:#0F1F2E;color:#FF6B35;padding:0 12px">CALL US.</span></h2>
+<p style="font-size:20px;font-weight:600;max-width:560px;margin:0 auto 40px">(470) 412-0062 · 24/7 dispatch · 25-mile radius from Smyrna</p>
+<a href="tel:+1 470-412-0062" class="btn" style="background:#0F1F2E;color:#FF6B35">📞 (470) 412-0062</a>
+</div></section>
+
+<section style="padding:80px 0;background:linear-gradient(180deg,rgba(0,0,0,.02),transparent)">
+<div style="max-width:1240px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+<div>
+<div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;opacity:.7;margin-bottom:16px">— On Google Maps</div>
+<h3 style="font-size:clamp(28px,3.5vw,48px);font-weight:600;line-height:1.1;margin-bottom:18px">Here&apos;s the spot.</h3>
+<p style="font-size:17px;opacity:.75;line-height:1.6">This is DA Plumbing & Septic&apos;s actual Google Maps photo. Scraped April 2026.</p>
+</div>
+<img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF19xUMNALTPXMIHY5vj4wdS3WTEbBDIqSXWW74clmK__jwhWoeG" alt="DA Plumbing & Septic" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px;box-shadow:0 30px 60px -25px rgba(0,0,0,.25)" referrerpolicy="no-referrer">
+</div></section><footer><div class="wrap"><div class="foot-grid">
+<div><div class="logo" style="margin-bottom:14px"><div class="logo-mark">DA</div>PLUMBING<br>&amp; SEPTIC</div><p style="max-width:300px">Plumbing &amp; septic emergencies, all of Cobb County, 24/7. 5.0★ across 12 reviews.</p></div>
+<div class="foot-col"><h5>Dispatch</h5><p>3903 S Cobb Dr SE #154</p><p>Smyrna, GA 30080</p><p>24/7</p></div>
+<div class="foot-col"><h5>Contact</h5><a href="tel:+1 470-412-0062">(470) 412-0062</a><a href="https://www.google.com/maps/place/DA+Plumbing+%26+Septic+Smyrna/@33.8578263,-84.5142721,14z/data=!4m8!1m2!2m1!1sDA+Plumbing+%26+Septic+Smyrna!3m4!1s0x88f511b7704953f7:0x167ff954c2a499f8!8m2!3d33.8578263!4d-84.5142721" target="_blank">Maps →</a></div>
+<div class="foot-col"><h5>Reviews</h5><p>5.0★ (12)</p><a href="https://search.google.com/local/reviews?placeid=ChIJ91NJcLcR9YgR-JmkwlT5fxY" target="_blank">Read all →</a></div>
+</div><div style="padding-top:30px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;display:flex;justify-content:space-between"><div>© 2026 DA Plumbing &amp; Septic · Smyrna, GA</div><div>24/7 dispatch · Cobb County</div></div></div></footer>
+<div class="demo-tag">DA Plumbing &amp; Septic</div>
+</body></html>

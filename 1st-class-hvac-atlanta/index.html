@@ -1,0 +1,129 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><title>1ST Class HVAC Atlanta — Smart climate, perfect rating</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#0A0E1A;color:#E8EEFF;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.display{font-family:'Space Grotesk',sans-serif;letter-spacing:-.03em}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+.notice{background:rgba(0,163,224,.1);color:#00A3E0;padding:8px 0;font-size:12px;text-align:center;font-family:'Space Grotesk',sans-serif;border-bottom:1px solid rgba(0,163,224,.2)}
+nav{padding:24px 0;background:rgba(10,14,26,.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(232,238,255,.08);position:sticky;top:0;z-index:50}
+.nav-row{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px}
+.logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#00A3E0,#0066B3);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#0A0E1A;clip-path:polygon(25% 0,100% 0,75% 100%,0 100%)}
+.nav-links{display:flex;gap:30px;font-size:14px;font-weight:500}
+.nav-links a{color:#E8EEFF;text-decoration:none;opacity:.75}
+.nav-cta{padding:12px 24px;background:#00A3E0;color:#0A0E1A;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.05em;text-transform:uppercase;clip-path:polygon(8% 0,100% 0,92% 100%,0 100%)}
+.hero{padding:100px 0 80px;position:relative;background:linear-gradient(rgba(10,14,26,.78),rgba(10,14,26,.92)),url("https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=1600&q=80") center/cover}
+.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(0,163,224,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,163,224,.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero-content{position:relative;z-index:2}
+.tag{display:inline-flex;align-items:center;gap:10px;background:rgba(0,163,224,.1);color:#00A3E0;padding:8px 16px;border-radius:0;font-size:12px;font-weight:600;margin-bottom:32px;letter-spacing:.1em;text-transform:uppercase;border:1px solid rgba(0,163,224,.3);clip-path:polygon(4% 0,100% 0,96% 100%,0 100%)}
+.tag::before{content:'●';color:#00A3E0;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(54px,8vw,140px);font-weight:700;line-height:.95;letter-spacing:-.04em;margin-bottom:32px;max-width:1100px}
+.hero h1 .grad{background:linear-gradient(120deg,#00A3E0,#7DD3FC);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:21px;color:rgba(232,238,255,.7);max-width:600px;margin-bottom:42px;font-weight:300}
+.btn{padding:16px 32px;font-weight:700;text-decoration:none;font-size:14px;letter-spacing:.05em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif}
+.btn-primary{background:#00A3E0;color:#0A0E1A;clip-path:polygon(6% 0,100% 0,94% 100%,0 100%);padding:16px 38px}
+.btn-secondary{background:transparent;color:#E8EEFF;border:1px solid rgba(232,238,255,.3)}
+.spec-grid{margin-top:80px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(0,163,224,.15);border:1px solid rgba(0,163,224,.15)}
+.spec{background:#0A0E1A;padding:32px;position:relative}
+.spec::after{content:'';position:absolute;top:0;right:0;width:6px;height:6px;background:#00A3E0;border-radius:50%}
+.spec .num{font-family:'Space Grotesk',sans-serif;font-size:48px;font-weight:700;color:#00A3E0;line-height:1;letter-spacing:-.03em}
+.spec .lbl{font-size:11px;color:rgba(232,238,255,.6);margin-top:10px;letter-spacing:.15em;text-transform:uppercase;font-family:'Space Grotesk',sans-serif}
+section{padding:120px 0;position:relative}
+.eyebrow{font-family:'Space Grotesk',sans-serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#00A3E0;margin-bottom:18px;font-weight:600}
+.sec-h{font-family:'Space Grotesk',sans-serif;font-size:clamp(46px,6vw,90px);font-weight:700;line-height:1;letter-spacing:-.03em;margin-bottom:30px;max-width:880px}
+.sec-h .grad{background:linear-gradient(120deg,#00A3E0,#7DD3FC);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sec-lead{font-size:18px;color:rgba(232,238,255,.7);max-width:680px;margin-bottom:50px;font-weight:300}
+.feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px}
+.feat{padding:40px;border:1px solid rgba(0,163,224,.18);background:rgba(0,163,224,.03);position:relative;clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))}
+.feat-num{font-family:'Space Grotesk',sans-serif;font-size:13px;color:#00A3E0;letter-spacing:.15em;margin-bottom:16px;font-weight:600}
+.feat h3{font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:600;margin-bottom:14px;letter-spacing:-.02em}
+.feat p{color:rgba(232,238,255,.65);font-size:15px;font-weight:300;line-height:1.7}
+.cta-final{padding:140px 0;text-align:center;background:linear-gradient(180deg,#0A0E1A,#0F1428);position:relative}
+.cta-final::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(0,163,224,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,163,224,.06) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.cta-final h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(48px,7vw,108px);font-weight:700;line-height:.95;letter-spacing:-.04em;margin-bottom:30px;position:relative}
+.cta-final h2 .grad{background:linear-gradient(120deg,#00A3E0,#7DD3FC);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+footer{padding:60px 0 30px;border-top:1px solid rgba(232,238,255,.08);font-size:14px;color:rgba(232,238,255,.5)}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:50px;margin-bottom:40px}
+.foot-col h5{font-family:'Space Grotesk',sans-serif;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:#00A3E0;margin-bottom:14px;font-weight:600}
+.foot-col p,.foot-col a{display:block;color:rgba(232,238,255,.55);text-decoration:none;font-size:14px;padding:5px 0}
+.demo-tag{position:fixed;bottom:24px;right:24px;background:#00A3E0;color:#0A0E1A;padding:14px 24px;font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;z-index:100;clip-path:polygon(6% 0,100% 0,94% 100%,0 100%)}
+@media(max-width:900px){.spec-grid,.feature-grid,.foot-grid{grid-template-columns:1fr}.nav-links{display:none}section{padding:70px 0}}
+</style></head><body>
+<div class="notice">⚡ Sales note: Same Defoor Hills address as Lead 6. Likely same operator or duplicate listing — verify before approach.</div>
+<nav><div class="wrap nav-row">
+<div class="logo"><div class="logo-mark">1°</div>1ST · CLASS</div>
+<div class="nav-links"><a href="#services">Services</a><a href="#tech">Tech</a><a href="#book">Book</a></div>
+<a href="tel:+1 404-927-8476" class="nav-cta">Book now</a>
+</div></nav>
+<section class="hero"><div class="wrap"><div class="hero-content">
+<div class="tag">Live · 24/7 dispatch · Atlanta</div>
+<h1>Smart climate.<br><span class="grad">Perfect rating.</span></h1>
+<p>5.0 stars across 17 verified reviews. Diagnostic-first technicians. Photo documentation on every visit. SMS updates from dispatch. HVAC built for the way you actually live in 2026.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap"><a href="tel:+1 404-927-8476" class="btn btn-primary">Book a visit →</a><a href="#services" class="btn btn-secondary">View capabilities</a></div>
+<div class="spec-grid">
+<div class="spec"><div class="num">5.0/5</div><div class="lbl">Google rating</div></div>
+<div class="spec"><div class="num">17</div><div class="lbl">Verified reviews</div></div>
+<div class="spec"><div class="num">2hr</div><div class="lbl">Avg response</div></div>
+<div class="spec"><div class="num">24/7</div><div class="lbl">Dispatch</div></div>
+</div></div></div></section>
+<section id="services"><div class="wrap">
+<div class="eyebrow">— Capabilities</div>
+<h2 class="sec-h">Built for the way <span class="grad">homes work now.</span></h2>
+<p class="sec-lead">Smart-thermostat integration. WiFi-enabled diagnostics. Multi-zone systems. Heat pumps. Indoor air quality. Whatever your house needs to be comfortable in 2026.</p>
+<div class="feature-grid">
+<div class="feat"><div class="feat-num">— 01.</div><h3>Smart-thermostat installs</h3><p>Nest, ecobee, Sensi, Honeywell. Properly wired, properly programmed, properly integrated with your existing HVAC.</p></div>
+<div class="feat"><div class="feat-num">— 02.</div><h3>Heat pump conversions</h3><p>Save 30-50% on heating costs. Federal tax credits available. We handle the install + the paperwork.</p></div>
+<div class="feat"><div class="feat-num">— 03.</div><h3>Multi-zone systems</h3><p>Different temperatures in different rooms. The single most-requested upgrade we install in 2026.</p></div>
+<div class="feat"><div class="feat-num">— 04.</div><h3>IAQ + filtration</h3><p>HEPA + UV combo systems. Whole-home dehumidification for Atlanta&apos;s summers. Real numbers, not vague claims.</p></div>
+<div class="feat"><div class="feat-num">— 05.</div><h3>Diagnostics + repair</h3><p>30-point inspection, photo-documented. You get the report. We get to keep our 5-star rating.</p></div>
+<div class="feat"><div class="feat-num">— 06.</div><h3>24/7 emergency</h3><p>SMS-dispatched. Real-time arrival tracking. Two-hour response guarantee across the metro.</p></div>
+</div></div></section>
+<section id="tech"><div class="wrap">
+<div class="eyebrow">— What our customers say</div>
+<h2 class="sec-h">5.0 stars. <span class="grad">17 times.</span> No exceptions.</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px">
+
+<div style="background:rgba(255,255,255,.06);padding:32px;border-radius:8px;border:2px dashed rgba(255,255,255,.18)">
+<div style="color:rgba(255,255,255,.55);font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #1 —</div>
+<p style="font-size:15px;line-height:1.65;color:#fff;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJ9flNtDAF9YgR9egdyXgZWPg" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:rgba(255,255,255,.06);padding:32px;border-radius:8px;border:2px dashed rgba(255,255,255,.18)">
+<div style="color:rgba(255,255,255,.55);font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #2 —</div>
+<p style="font-size:15px;line-height:1.65;color:#fff;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJ9flNtDAF9YgR9egdyXgZWPg" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:rgba(255,255,255,.06);padding:32px;border-radius:8px;border:2px dashed rgba(255,255,255,.18)">
+<div style="color:rgba(255,255,255,.55);font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #3 —</div>
+<p style="font-size:15px;line-height:1.65;color:#fff;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJ9flNtDAF9YgR9egdyXgZWPg" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+</div></div></section>
+<section class="cta-final" id="book"><div class="wrap">
+<h2>Climate is <span class="grad">on demand</span> now.<br>Service should be too.</h2>
+<p style="font-size:19px;color:rgba(232,238,255,.65);max-width:580px;margin:0 auto 40px;font-weight:300;position:relative">Book online. Track in real-time. Pay through SMS. Or just call — we still answer.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;position:relative"><a href="tel:+1 404-927-8476" class="btn btn-primary">📞 (404) 927-8476</a><a href="https://www.google.com/maps/place/1ST+Class+HVAC+Atlanta/@33.8134926,-84.432074,14z/data=!4m8!1m2!2m1!1s1ST+Class+HVAC+Atlanta!3m4!1s0x88f50530b44df9f5:0xf8581978c91de8f5!8m2!3d33.8134926!4d-84.432074" target="_blank" class="btn btn-secondary">Read all reviews →</a></div>
+</div></section>
+
+<section style="padding:80px 0;background:linear-gradient(180deg,rgba(0,0,0,.02),transparent)">
+<div style="max-width:1240px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+<div>
+<div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;opacity:.7;margin-bottom:16px">— On Google Maps</div>
+<h3 style="font-size:clamp(28px,3.5vw,48px);font-weight:600;line-height:1.1;margin-bottom:18px">Here&apos;s the spot.</h3>
+<p style="font-size:17px;opacity:.75;line-height:1.6">This is 1ST Class HVAC Atlanta&apos;s actual Google Maps photo. Scraped April 2026.</p>
+</div>
+<img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAG5oqVIp9j9FZFCYKRbbiOdmgdHOEQEE5GA1N9vzMXFEdII_bye8" alt="1ST Class HVAC Atlanta" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px;box-shadow:0 30px 60px -25px rgba(0,0,0,.25)" referrerpolicy="no-referrer">
+</div></section><footer><div class="wrap"><div class="foot-grid">
+<div><div class="logo" style="margin-bottom:14px"><div class="logo-mark">1°</div>1ST · CLASS</div><p style="max-width:300px">Smart-home HVAC for metro Atlanta. 5.0★ across 17 verified reviews.</p></div>
+<div class="foot-col"><h5>Visit</h5><p>2135 Defoor Hills Rd NW Suite G</p><p>Atlanta, GA 30318</p><p>24/7</p></div>
+<div class="foot-col"><h5>Contact</h5><a href="tel:+1 404-927-8476">(404) 927-8476</a><a href="https://www.google.com/maps/place/1ST+Class+HVAC+Atlanta/@33.8134926,-84.432074,14z/data=!4m8!1m2!2m1!1s1ST+Class+HVAC+Atlanta!3m4!1s0x88f50530b44df9f5:0xf8581978c91de8f5!8m2!3d33.8134926!4d-84.432074" target="_blank">Maps →</a></div>
+<div class="foot-col"><h5>Reviews</h5><p>5.0★ (17)</p><a href="https://search.google.com/local/reviews?placeid=ChIJ9flNtDAF9YgR9egdyXgZWPg" target="_blank">Read all →</a></div>
+</div><div style="padding-top:30px;border-top:1px solid rgba(232,238,255,.08);font-size:12px;font-family:'Space Grotesk',sans-serif;display:flex;justify-content:space-between;color:rgba(232,238,255,.5);letter-spacing:.05em"><div>© 2026 1ST CLASS HVAC ATLANTA</div><div>BUILT FOR 2026</div></div></div></footer>
+<div class="demo-tag">1ST Class HVAC ATL</div>
+</body></html>

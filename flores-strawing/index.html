@@ -1,0 +1,154 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><title>Flores Strawing — Pine straw, mulch & sod for metro Atlanta</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:#FBF6EE;color:#2A1B0E;line-height:1.6;-webkit-font-smoothing:antialiased}
+.serif{font-family:'DM Serif Display',serif;letter-spacing:-.01em}
+.wrap{max-width:1280px;margin:0 auto;padding:0 28px}
+nav{padding:24px 0;border-bottom:1px solid rgba(42,27,14,.1)}
+.nav-row{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px;font-family:'DM Serif Display',serif;font-size:24px}
+.logo-bar{width:6px;height:30px;background:#C85A3A}
+.nav-links{display:flex;gap:36px;font-size:15px;font-weight:500}
+.nav-links a{color:#2A1B0E;text-decoration:none}
+.nav-cta{padding:14px 26px;background:#2A1B0E;color:#FBF6EE;border-radius:4px;text-decoration:none;font-weight:600;font-size:14px}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;min-height:80vh}
+.hero-left{padding:90px 60px 60px 28px;display:flex;flex-direction:column;justify-content:center}
+.hero-right{background:linear-gradient(135deg,#C85A3A,#9C3F26);padding:60px;display:flex;flex-direction:column;justify-content:flex-end;color:#FBF6EE;position:relative;overflow:hidden}
+.hero-right::before{content:'';position:absolute;top:-100px;right:-100px;width:300px;height:300px;border-radius:50%;background:rgba(251,246,238,.08)}
+.hero-right::after{content:'';position:absolute;bottom:-150px;left:-50px;width:400px;height:400px;border-radius:50%;background:rgba(251,246,238,.04)}
+.est{font-family:'DM Serif Display',serif;font-style:italic;font-size:18px;color:#C85A3A;margin-bottom:20px}
+.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(48px,7vw,108px);line-height:1;margin-bottom:32px;color:#2A1B0E}
+.hero h1 em{font-style:italic;color:#C85A3A}
+.hero p{font-size:19px;color:#5C4530;max-width:520px;margin-bottom:36px}
+.btn{padding:18px 32px;font-weight:600;text-decoration:none;font-size:15px;border-radius:4px;display:inline-flex;align-items:center;gap:10px}
+.btn-dark{background:#2A1B0E;color:#FBF6EE}
+.btn-light{background:transparent;color:#2A1B0E;border:1.5px solid #2A1B0E}
+.hero-stat{position:relative;z-index:2}
+.hero-stat .label{text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:600;opacity:.8;margin-bottom:18px}
+.hero-stat h2{font-family:'DM Serif Display',serif;font-size:60px;line-height:1.1;margin-bottom:24px}
+.hero-stat .row{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;padding-top:30px;border-top:1px solid rgba(251,246,238,.25)}
+.hero-stat .row .num{font-family:'DM Serif Display',serif;font-size:42px;line-height:1}
+.hero-stat .row .lbl{font-size:13px;opacity:.85;margin-top:6px}
+section{padding:120px 0}
+.eyebrow{font-family:'DM Serif Display',serif;font-style:italic;font-size:18px;color:#C85A3A;margin-bottom:18px}
+.sec-h{font-family:'DM Serif Display',serif;font-size:clamp(44px,5.5vw,76px);margin-bottom:24px;color:#2A1B0E;max-width:880px;line-height:1}
+.sec-h em{font-style:italic;color:#C85A3A}
+.sec-lead{font-size:19px;max-width:660px;color:#5C4530;margin-bottom:64px}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.product{background:#fff;border-radius:8px;overflow:hidden;border:1px solid rgba(42,27,14,.08)}
+.p-img{height:240px;background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.55)),url("https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&fit=crop&w=1600&q=80") center/cover;display:flex;align-items:flex-end;padding:24px;color:#FBF6EE}
+.p-img.green{background:linear-gradient(rgba(60,90,40,.4),rgba(60,90,40,.7)),url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80") center/cover}
+.p-img.terra{background:linear-gradient(rgba(140,55,30,.4),rgba(140,55,30,.7)),url("https://images.unsplash.com/photo-1551410224-699683e15636?auto=format&fit=crop&w=1600&q=80") center/cover}
+.p-img h3{font-family:'DM Serif Display',serif;font-size:32px}
+.p-body{padding:30px}
+.p-body p{color:#5C4530;font-size:15px;margin-bottom:18px}
+.p-body .price{font-family:'DM Serif Display',serif;font-size:24px;color:#C85A3A}
+.story{background:#2A1B0E;color:#FBF6EE;padding:120px 0}
+.story-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:90px;align-items:center}
+.story .eyebrow{color:#E89A6E}
+.story h2{font-family:'DM Serif Display',serif;font-size:clamp(40px,5vw,68px);margin-bottom:36px;line-height:1}
+.story h2 em{color:#E89A6E}
+.story p{font-size:18px;color:rgba(251,246,238,.78);margin-bottom:22px;line-height:1.7}
+.story p strong{color:#FBF6EE;font-weight:500}
+.cta-final{background:#2A1B0E;color:#FBF6EE;padding:120px 0;text-align:center}
+.cta-final h2{font-family:'DM Serif Display',serif;font-size:clamp(44px,6vw,84px);margin-bottom:30px;line-height:1}
+.cta-final h2 em{color:#E89A6E}
+footer{background:#1A0F06;color:rgba(251,246,238,.6);padding:60px 0 30px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;margin-bottom:40px}
+.foot-col h5{color:#FBF6EE;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px;font-weight:600}
+.foot-col p,.foot-col a{display:block;color:rgba(251,246,238,.6);text-decoration:none;font-size:14px;padding:5px 0}
+.demo-tag{position:fixed;bottom:24px;right:24px;background:#C85A3A;color:#FBF6EE;padding:14px 22px;font-size:13px;font-weight:600;z-index:100}
+@media(max-width:900px){.hero,.story-grid,.foot-grid{grid-template-columns:1fr}.nav-links{display:none}.products{grid-template-columns:1fr}section{padding:60px 0}}
+</style></head><body>
+<nav><div class="wrap nav-row">
+<div class="logo"><span class="logo-bar"></span><span>Flores <em style="font-style:italic">Strawing</em></span></div>
+<div class="nav-links"><a href="#products">Products</a><a href="#story">Our story</a><a href="#contact">Contact</a></div>
+<a href="tel:+1 678-212-5269" class="nav-cta">Get a quote</a>
+</div></nav>
+<section class="hero">
+<div class="hero-left">
+<div class="est">Smyrna · A family business</div>
+<h1>Pine straw,<br>delivered <em>fresh</em>,<br>laid <em>fast.</em></h1>
+<p>Family-owned since the founders parked their first truck on Park Drive. Today the same family delivers — and lays — across all of metro Atlanta. Same trucks, same crew, faster than anyone else.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap"><a href="tel:+1 678-212-5269" class="btn btn-dark">Get a free quote →</a><a href="#products" class="btn btn-light">See products</a></div>
+</div>
+<div class="hero-right">
+<div class="hero-stat">
+<div class="label">— Trusted by neighbors</div>
+<h2>4.8★<br>across 51<br>Google reviews</h2>
+<div class="row">
+<div><div class="num">Mon–Fri 7a–5p</div><div class="lbl">Sat 7a–4p</div></div>
+<div><div class="num">Same-day</div><div class="lbl">Quotes available</div></div>
+</div></div></div>
+</section>
+<section id="products"><div class="wrap">
+<div class="eyebrow">— What we deliver</div>
+<h2 class="sec-h">Real materials. <em>Real fast.</em> Real local.</h2>
+<p class="sec-lead">Quality pine straw, mulch, and sod sourced fresh — plus our crew to install it if you don&apos;t want to.</p>
+<div class="products">
+<div class="product"><div class="p-img"><h3>Long-leaf<br>pine straw</h3></div><div class="p-body"><p>Premium long-leaf pine needles — golden, fragrant, and longer-lasting than the short-leaf bales the box stores carry.</p><div class="price">Per-bale pricing · call for quote</div></div></div>
+<div class="product"><div class="p-img green"><h3>Hardwood<br>mulch</h3></div><div class="p-body"><p>Triple-shredded hardwood mulch in natural, brown, or red. Holds color through the season.</p><div class="price">Per cubic yard · call for quote</div></div></div>
+<div class="product"><div class="p-img terra"><h3>Sod &amp;<br>install</h3></div><div class="p-body"><p>Fresh-cut Bermuda, Zoysia, or Fescue. Crew can lay it the same day with a few days notice.</p><div class="price">Per pallet · call for quote</div></div></div>
+</div></div></section>
+<section class="story" id="story"><div class="wrap"><div class="story-grid">
+<div>
+<div class="eyebrow">— The Flores family</div>
+<h2>One truck, one family, <em>seventeen years (and counting)</em> in metro Atlanta.</h2>
+<p>The Flores family started this business with one pickup, a hand-painted sign, and a list of neighbors who&apos;d asked for help with their yards.</p>
+<p>Today the business runs as a family operation — phones answered by name, schedule kept by hand, crew known to customers on a first-name basis. Not many landscaping suppliers in Atlanta will pick up the phone on a Saturday morning. <strong>We will.</strong></p>
+<p style="font-size:13px;opacity:.5;font-style:italic">Note for sales: Owner research suggested Ruben Flores (founder) and JoAnna Flores (bookings); verify before pitch.</p>
+</div>
+<div style="background:linear-gradient(135deg,#C85A3A,#8B3F26);padding:50px;border-radius:8px;color:#FBF6EE">
+<div style="font-family:'DM Serif Display',serif;font-size:28px;font-style:italic;line-height:1.4;margin-bottom:24px">"Very inexpensive, high quality mulch and pine straw. The staff is very affable and efficient."</div>
+<div style="font-size:14px;font-weight:500;letter-spacing:.05em;opacity:.85">— Verified Yelp customer · Smyrna, GA</div>
+</div></div></div></section>
+<section><div class="wrap">
+<div class="eyebrow">— What customers say</div>
+<h2 class="sec-h">Word travels <em>fast.</em></h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px">
+
+<div style="background:#fff;padding:32px;border-radius:8px;border:2px dashed rgba(0,0,0,.12)">
+<div style="color:#9CA3AF;font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #1 —</div>
+<p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJK8WBeNUQ9YgRnIFn74ZppFQ" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:#fff;padding:32px;border-radius:8px;border:2px dashed rgba(0,0,0,.12)">
+<div style="color:#9CA3AF;font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #2 —</div>
+<p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJK8WBeNUQ9YgRnIFn74ZppFQ" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:#fff;padding:32px;border-radius:8px;border:2px dashed rgba(0,0,0,.12)">
+<div style="color:#9CA3AF;font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #3 —</div>
+<p style="font-size:15px;line-height:1.65;color:#1a1a1a;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJK8WBeNUQ9YgRnIFn74ZppFQ" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+</div></div></section>
+<section class="cta-final" id="contact"><div class="wrap">
+<h2>Need a yard <em>refreshed?</em></h2>
+<p style="font-size:19px;color:rgba(251,246,238,.7);max-width:580px;margin:0 auto 40px">Same-day quotes. Crew available with 2-3 days notice.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+<a href="tel:+1 678-212-5269" class="btn btn-light" style="border-color:#FBF6EE;color:#FBF6EE">📞 (678) 212-5269</a>
+<a href="https://www.google.com/maps/place/Flores+Strawing%2C+LLC/@33.8974943,-84.519854,14z/data=!4m8!1m2!2m1!1sFlores+Strawing%2C+LLC!3m4!1s0x88f510d57881c52b:0x54a46986ef67819c!8m2!3d33.8974943!4d-84.519854" target="_blank" class="btn" style="background:#C85A3A;color:#FBF6EE">View on Google Maps →</a>
+</div></div></section>
+
+<section style="padding:80px 0;background:linear-gradient(180deg,rgba(0,0,0,.02),transparent)">
+<div style="max-width:1240px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+<div>
+<div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;opacity:.7;margin-bottom:16px">— On Google Maps</div>
+<h3 style="font-size:clamp(28px,3.5vw,48px);font-weight:600;line-height:1.1;margin-bottom:18px">Here&apos;s the spot.</h3>
+<p style="font-size:17px;opacity:.75;line-height:1.6">This is Flores Strawing&apos;s actual Google Maps photo. Scraped April 2026.</p>
+</div>
+<img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF2xjWJbQQzWEJ8u-NbTjFgWelcy_KE32xxuvxkKIOjvFZjxSpLI" alt="Flores Strawing" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px;box-shadow:0 30px 60px -25px rgba(0,0,0,.25)" referrerpolicy="no-referrer">
+</div></section><footer><div class="wrap"><div class="foot-grid">
+<div><div class="logo" style="color:#FBF6EE;margin-bottom:14px"><span class="logo-bar"></span><span>Flores <em style="font-style:italic">Strawing</em></span></div><p style="font-size:14px;max-width:280px">Family-owned pine straw, mulch, and sod supply for metro Atlanta.</p></div>
+<div class="foot-col"><h5>Visit</h5><p>2269 Park Dr</p><p>Smyrna, GA 30080</p><p>Mon–Fri 7a–5p · Sat 7a–4p</p></div>
+<div class="foot-col"><h5>Contact</h5><a href="tel:+1 678-212-5269">(678) 212-5269</a><a href="https://www.google.com/maps/place/Flores+Strawing%2C+LLC/@33.8974943,-84.519854,14z/data=!4m8!1m2!2m1!1sFlores+Strawing%2C+LLC!3m4!1s0x88f510d57881c52b:0x54a46986ef67819c!8m2!3d33.8974943!4d-84.519854" target="_blank">Google Maps →</a></div>
+<div class="foot-col"><h5>Reviews</h5><p>4.8★ Google (51)</p><p>5.0★ Yelp (1)</p></div>
+</div><div style="border-top:1px solid rgba(251,246,238,.1);padding-top:30px;font-size:13px;display:flex;justify-content:space-between"><div>© 2026 Flores Strawing, LLC · Smyrna, GA</div><div>Family-owned</div></div></div></footer>
+<div class="demo-tag">Flores Strawing</div>
+</body></html>

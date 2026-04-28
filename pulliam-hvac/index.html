@@ -1,0 +1,150 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><title>Pulliam HVAC &amp; Plumbing — Atlanta&apos;s trusted family service</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#FAF7F2;color:#0A1F3F;line-height:1.6}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+.top-bar{background:#0A1F3F;color:#F5E6D3;padding:10px 0;font-size:13px}
+.top-bar .wrap{display:flex;justify-content:space-between;align-items:center}
+.top-bar a{color:#F5E6D3;text-decoration:none}
+nav{background:#FAF7F2;border-bottom:1px solid rgba(10,31,63,.1);padding:24px 0}
+.nav-row{display:flex;align-items:center;justify-content:space-between}
+.crest{display:flex;align-items:center;gap:18px}
+.crest-mark{width:54px;height:54px;background:linear-gradient(135deg,#0A1F3F,#1A3866);color:#F5E6D3;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;border-radius:4px;border:2px solid #C9A961}
+.crest-text strong{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;letter-spacing:.05em;color:#0A1F3F;display:block}
+.crest-text small{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:#C9A961}
+.nav-links{display:flex;gap:36px;font-size:14px;font-weight:500}
+.nav-links a{color:#0A1F3F;text-decoration:none}
+.nav-cta{padding:13px 28px;background:#C9A961;color:#0A1F3F;text-decoration:none;font-weight:600;font-size:14px}
+.hero{padding:100px 0 80px;background:linear-gradient(180deg,rgba(250,247,242,.92) 0%,rgba(245,235,216,.95) 100%),url("https://images.unsplash.com/photo-1631545806609-67caaa45f96b?auto=format&fit=crop&w=1600&q=80") center/cover}
+.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:80px;align-items:center}
+.since-mark{display:inline-flex;align-items:center;gap:18px;margin-bottom:36px;font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:#0A1F3F}
+.since-mark .line{width:60px;height:1px;background:#C9A961}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(54px,7.5vw,128px);font-weight:500;line-height:1.05;margin-bottom:36px}
+.hero h1 em{font-style:italic;color:#C9A961}
+.hero p{font-size:20px;color:#3D4D6B;max-width:560px;margin-bottom:42px;line-height:1.7}
+.btn{padding:18px 36px;font-weight:600;text-decoration:none;font-size:15px;display:inline-flex;align-items:center;gap:10px}
+.btn-primary{background:#0A1F3F;color:#F5E6D3}
+.btn-secondary{background:transparent;color:#0A1F3F;border:1.5px solid #0A1F3F}
+.seal-card{background:#fff;padding:48px;text-align:center;box-shadow:0 30px 80px -30px rgba(10,31,63,.3);border:1px solid rgba(201,169,97,.3)}
+.seal-num{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:96px;color:#0A1F3F;line-height:1;margin-bottom:18px}
+.seal-num em{font-style:italic;color:#C9A961}
+.seal-divider{width:80px;height:1px;background:#C9A961;margin:0 auto 18px}
+.seal-tag{font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:#3D4D6B;font-weight:500}
+.seal-stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:32px;padding-top:24px;border-top:1px solid rgba(10,31,63,.1)}
+.seal-stats .n{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:#0A1F3F}
+.seal-stats .l{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#3D4D6B;margin-top:4px}
+section{padding:120px 0}
+.eyebrow{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:#C9A961;margin-bottom:18px}
+.sec-h{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,5.5vw,80px);font-weight:500;color:#0A1F3F;margin-bottom:30px;max-width:840px;line-height:1.05}
+.sec-h em{font-style:italic;color:#C9A961}
+.sec-lead{font-size:19px;color:#3D4D6B;max-width:680px;margin-bottom:60px;line-height:1.7}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px}
+.svc{background:#fff;padding:50px;border-top:3px solid #C9A961;display:flex;gap:30px}
+.svc-num{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:64px;color:#C9A961;line-height:.9}
+.svc h3{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;margin-bottom:14px}
+.svc p{color:#3D4D6B;font-size:16px;line-height:1.65}
+.reviews{background:#0A1F3F;color:#F5E6D3}
+.reviews .eyebrow{color:#C9A961}
+.reviews .sec-h{color:#F5E6D3}
+.reviews .sec-h em{color:#C9A961}
+.notice{background:rgba(201,169,97,.12);border-left:4px solid #C9A961;padding:30px 36px;margin:30px 0;border-radius:0 8px 8px 0}
+.notice strong{display:block;font-family:'Cormorant Garamond',serif;font-size:18px;color:#C9A961;margin-bottom:8px;font-style:italic}
+.cta-final{padding:140px 0;text-align:center;background:linear-gradient(180deg,#FAF7F2,#F5EBD8)}
+.cta-final h2{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,7vw,108px);font-weight:500;color:#0A1F3F;margin-bottom:36px;line-height:1.05}
+.cta-final h2 em{font-style:italic;color:#C9A961}
+footer{background:#0A1F3F;color:rgba(245,230,211,.7);padding:80px 0 40px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;margin-bottom:60px}
+.foot-col h5{color:#C9A961;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;margin-bottom:18px}
+.foot-col p,.foot-col a{display:block;color:rgba(245,230,211,.7);text-decoration:none;font-size:14px;padding:5px 0}
+.demo-tag{position:fixed;bottom:24px;right:24px;background:#C9A961;color:#0A1F3F;padding:14px 22px;font-weight:600;font-size:13px;z-index:100}
+@media(max-width:900px){.hero-grid,.svc-grid,.foot-grid{grid-template-columns:1fr}.nav-links{display:none}section{padding:70px 0}}
+</style></head><body>
+<div class="top-bar"><div class="wrap"><span style="font-family:'Cormorant Garamond',serif;font-style:italic">— Atlanta&apos;s trusted family service —</span><a href="tel:+1 770-572-8638">📞 (770) 572-8638 · Sun–Sat 8a–8p</a></div></div>
+<nav><div class="wrap nav-row">
+<div class="crest"><div class="crest-mark">P</div><div class="crest-text"><strong>PULLIAM</strong><small>Heating · Air · Plumbing</small></div></div>
+<div class="nav-links"><a href="#services">Services</a><a href="#legacy">The family</a><a href="#contact">Schedule</a></div>
+<a href="tel:+1 770-572-8638" class="nav-cta">Schedule →</a>
+</div></nav>
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<div class="since-mark"><span class="line"></span><strong style="color:#C9A961;letter-spacing:.1em;text-transform:uppercase;font-size:14px;font-style:normal">Family-owned</strong><em style="font-style:italic">· Atlanta, Georgia</em></div>
+<h1>Three trades.<br>One family.<br><em>Decades</em> of taking care of yours.</h1>
+<p>The Pulliam family has kept Atlanta homes comfortable for over thirty years. Joey runs the company today alongside the technicians his father trained — and the technicians they&apos;re training now.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap"><a href="tel:+1 770-572-8638" class="btn btn-primary">Schedule service →</a><a href="#services" class="btn btn-secondary">Browse services</a></div>
+</div>
+<div><div class="seal-card">
+<div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:#C9A961;margin-bottom:12px">— Family-owned since —</div>
+<div class="seal-num">19<em>91</em></div>
+<div class="seal-divider"></div>
+<div class="seal-tag">Atlanta · Georgia</div>
+<div class="seal-stats">
+<div><div class="n">30+</div><div class="l">Years</div></div>
+<div><div class="n">2 trades</div><div class="l">HVAC + Plumbing</div></div>
+<div><div class="n">Daily</div><div class="l">8a–8p</div></div>
+</div></div></div>
+</div></section>
+<section id="services"><div class="wrap">
+<div class="eyebrow">— Comprehensive home services</div>
+<h2 class="sec-h">Two trades.<br><em>One family</em> handling both.</h2>
+<p class="sec-lead">The reason Atlanta homeowners call Pulliam is simple: heating, cooling, AND plumbing under one roof. One call, one company, one family-owned operation.</p>
+<div class="svc-grid">
+<div class="svc"><div class="svc-num">I.</div><div><h3>Heating</h3><p>Furnace repair, replacement, and seasonal service. Gas, electric, heat pumps, and high-efficiency conversions.</p></div></div>
+<div class="svc"><div class="svc-num">II.</div><div><h3>Air conditioning</h3><p>Diagnostics, repairs, and full system replacements. Bryant, Trane, Carrier, Lennox — we service them all.</p></div></div>
+<div class="svc"><div class="svc-num">III.</div><div><h3>Plumbing</h3><p>Repair, repipe, water heaters, gas lines. Residential and light commercial across metro Atlanta.</p></div></div>
+<div class="svc"><div class="svc-num">IV.</div><div><h3>Indoor air &amp; water</h3><p>Whole-home filtration, humidifiers, water softeners, UV systems. The unsexy stuff that makes a house feel like a home.</p></div></div>
+</div></div></section>
+<section id="legacy" style="background:#F5EBD8"><div class="wrap">
+<div class="eyebrow">— A note from Joey</div>
+<h2 class="sec-h">My father started this company.<br><em>I keep his name on the truck.</em></h2>
+<p class="sec-lead">Atlanta has changed a lot over the decades. Our promise hasn&apos;t. We answer the phone. We show up when we say we will. We tell you the truth about your system. And we stand behind every job.</p>
+<div class="notice"><strong>Sales note (do not show prospect):</strong>This page is positioned to help Pulliam control their narrative — they currently have a 2.4★ Google rating with 24 reviews, and a polished website helps separate quality work from the noise of complaints. Pitch angle: a website and a managed reviews section is your best PR play.</div>
+</div></section>
+<section class="reviews" id="reviews"><div class="wrap">
+<div class="eyebrow">— Customer voices</div>
+<h2 class="sec-h">Find Pulliam reviewed across <em>multiple platforms.</em></h2>
+<p class="sec-lead" style="color:rgba(245,230,211,.75)">Below: real review URLs. Once Tyler has selected a few representative reviews to feature, paste them here.</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+
+<div style="background:rgba(255,255,255,.06);padding:32px;border-radius:8px;border:2px dashed rgba(255,255,255,.18)">
+<div style="color:rgba(255,255,255,.55);font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #1 —</div>
+<p style="font-size:15px;line-height:1.65;color:#fff;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJ4aiOJPQC9YgRtGDch8J7F8A" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:rgba(255,255,255,.06);padding:32px;border-radius:8px;border:2px dashed rgba(255,255,255,.18)">
+<div style="color:rgba(255,255,255,.55);font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #2 —</div>
+<p style="font-size:15px;line-height:1.65;color:#fff;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJ4aiOJPQC9YgRtGDch8J7F8A" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+
+<div style="background:rgba(255,255,255,.06);padding:32px;border-radius:8px;border:2px dashed rgba(255,255,255,.18)">
+<div style="color:rgba(255,255,255,.55);font-size:11px;letter-spacing:.15em;font-weight:600;text-transform:uppercase;margin-bottom:14px">— Real review slot #3 —</div>
+<p style="font-size:15px;line-height:1.65;color:#fff;margin-bottom:20px;font-style:italic;opacity:.7">Paste a verbatim Google review here before showing the prospect. The link below opens this business&apos;s real Google reviews.</p>
+<a href="https://search.google.com/local/reviews?placeid=ChIJ4aiOJPQC9YgRtGDch8J7F8A" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#3B82F6;text-decoration:none;font-weight:600;padding:8px 14px;background:rgba(59,130,246,.1);border-radius:6px">→ Open real Google reviews</a>
+</div>
+</div></div></section>
+<section class="cta-final" id="contact"><div class="wrap">
+<h2>One call.<br><em>One family.</em><br>Both trades.</h2>
+<p style="font-size:20px;color:#3D4D6B;max-width:600px;margin:0 auto 40px">Same-day appointments across metro Atlanta. Free estimates on installations.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center"><a href="tel:+1 770-572-8638" class="btn btn-primary">📞 (770) 572-8638</a><a href="mailto:pulliamjoey05@gmail.com" class="btn btn-secondary">Email Joey →</a></div>
+</div></section>
+
+<section style="padding:80px 0;background:linear-gradient(180deg,rgba(0,0,0,.02),transparent)">
+<div style="max-width:1240px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+<div>
+<div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;opacity:.7;margin-bottom:16px">— On Google Maps</div>
+<h3 style="font-size:clamp(28px,3.5vw,48px);font-weight:600;line-height:1.1;margin-bottom:18px">Here&apos;s the spot.</h3>
+<p style="font-size:17px;opacity:.75;line-height:1.6">This is Pulliam HVAC & Plumbing&apos;s actual Google Maps photo. Scraped April 2026.</p>
+</div>
+<img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAH6Ou4egILT8LNujNakKWeNN-zHHjuSsQQgAye89ZK_Lp1z1mksP" alt="Pulliam HVAC & Plumbing" loading="lazy" style="width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px;box-shadow:0 30px 60px -25px rgba(0,0,0,.25)" referrerpolicy="no-referrer">
+</div></section><footer><div class="wrap"><div class="foot-grid">
+<div><div class="crest" style="margin-bottom:20px"><div class="crest-mark">P</div><div class="crest-text"><strong style="color:#F5E6D3">PULLIAM</strong><small>Heating · Air · Plumbing</small></div></div><p style="font-size:14px;max-width:340px">Family-owned heating, cooling, and plumbing for metro Atlanta.</p></div>
+<div class="foot-col"><h5>Visit</h5><p>2469 Lakewood Ave SW</p><p>Atlanta, GA 30315</p><p>Sun–Sat 8a–8p</p></div>
+<div class="foot-col"><h5>Contact</h5><a href="tel:+1 770-572-8638">(770) 572-8638</a><a href="mailto:pulliamjoey05@gmail.com">pulliamjoey05@gmail.com</a></div>
+<div class="foot-col"><h5>Reviews</h5><p>2.4★ Google (24)</p><a href="https://www.google.com/maps/place/PULLIAM+HVAC%2F+PLUMBING/@33.6973374,-84.3997544,14z/data=!4m8!1m2!2m1!1sPULLIAM+HVAC%2F+PLUMBING!3m4!1s0x88f502f4248ea8e1:0xc0177bc287dc60b4!8m2!3d33.6973374!4d-84.3997544" target="_blank">View on Maps →</a></div>
+</div><div style="padding-top:40px;border-top:1px solid rgba(201,169,97,.2);font-size:13px;display:flex;justify-content:space-between;color:rgba(245,230,211,.5)"><div>© 2026 Pulliam HVAC &amp; Plumbing · Atlanta, GA</div><div>Joey Pulliam, Owner</div></div></div></footer>
+<div class="demo-tag">Pulliam HVAC</div>
+</body></html>
