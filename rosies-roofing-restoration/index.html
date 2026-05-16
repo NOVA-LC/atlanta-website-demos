@@ -1,0 +1,828 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosie's Roofing and Restoration — GAF Master Elite, Triple-Certified Atlanta Roofing</title>
+    <meta name="description" content="Atlanta roofing contractor certified GAF Master Elite, Owens Corning Preferred, and CertainTeed Preferred. 5.0 stars, 32 reviews. Call 678-799-7499.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=optional" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #fafaf7;
+            --color-fg: #0a0a0a;
+            --color-accent: #7c3a30;
+            --color-warm-grey: #e8e2d5;
+            --color-dark-charcoal: #1a1614;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            --s-1: 0.25rem;
+            --s-2: 0.5rem;
+            --s-3: 0.75rem;
+            --s-4: 1rem;
+            --s-5: 1.5rem;
+            --s-6: 2rem;
+            --s-7: 3rem;
+            --s-8: 4rem;
+            --s-9: 6rem;
+            --s-10: 8rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--color-bg);
+            color: var(--color-fg);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        *:focus-visible {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: var(--s-6);
+            padding: var(--s-6) var(--s-5);
+            background: var(--color-bg);
+            overflow: hidden;
+        }
+
+        @media (max-width: 48rem) {
+            .hero {
+                grid-template-columns: 1fr;
+                min-height: auto;
+                padding: var(--s-8) var(--s-4) var(--s-7);
+            }
+        }
+
+        .hero-content {
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding-bottom: var(--s-7);
+        }
+
+        @media (max-width: 48rem) {
+            .hero-content {
+                padding-bottom: 0;
+            }
+        }
+
+        .hero-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: var(--s-4);
+            opacity: 0;
+            transform: translateY(24px);
+            animation: heroIn 900ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+            animation-delay: 80ms;
+        }
+
+        .hero h1 {
+            font-size: clamp(3.5rem, 9vw, 8rem);
+            font-weight: 800;
+            line-height: 0.95;
+            letter-spacing: -0.03em;
+            margin-bottom: var(--s-5);
+            max-width: 16ch;
+            opacity: 0;
+            transform: translateY(24px);
+            animation: heroIn 900ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+            animation-delay: 240ms;
+        }
+
+        @media (max-width: 23.4375rem) {
+            .hero h1 {
+                font-size: 2.75rem;
+            }
+        }
+
+        .hero-sub {
+            font-size: 1.125rem;
+            line-height: 1.5;
+            color: #4a4a4a;
+            margin-bottom: var(--s-6);
+            max-width: 42ch;
+            opacity: 0;
+            transform: translateY(24px);
+            animation: heroIn 900ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+            animation-delay: 400ms;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-3);
+            padding: var(--s-4) var(--s-6);
+            background: var(--color-accent);
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 300ms cubic-bezier(0.22, 1, 0.36, 1);
+            box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+                        0 2px 2px hsl(0deg 0% 0% / 0.075),
+                        0 4px 4px hsl(0deg 0% 0% / 0.075),
+                        0 8px 8px hsl(0deg 0% 0% / 0.075);
+            opacity: 0;
+            transform: translateY(24px);
+            animation: heroIn 900ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+            animation-delay: 560ms;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075),
+                        0 4px 4px hsl(0deg 0% 0% / 0.075),
+                        0 8px 8px hsl(0deg 0% 0% / 0.075),
+                        0 16px 16px hsl(0deg 0% 0% / 0.075),
+                        0 32px 32px hsl(0deg 0% 0% / 0.075);
+        }
+
+        @keyframes heroIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-visual {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-5);
+            align-items: flex-end;
+        }
+
+        @media (max-width: 48rem) {
+            .hero-visual {
+                align-items: stretch;
+                margin-top: var(--s-6);
+            }
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 640px;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+                        0 2px 2px hsl(0deg 0% 0% / 0.075),
+                        0 4px 4px hsl(0deg 0% 0% / 0.075),
+                        0 8px 8px hsl(0deg 0% 0% / 0.075),
+                        0 16px 16px hsl(0deg 0% 0% / 0.075);
+            animation: kenBurns 20s ease-in-out infinite alternate;
+            transform-origin: center center;
+        }
+
+        @keyframes kenBurns {
+            0%   { transform: scale(1) translate(0, 0); }
+            100% { transform: scale(1.05) translate(-1.5%, -1%); }
+        }
+
+        .glass-cards {
+            display: flex;
+            flex-direction: column;
+            gap: var(--s-4);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        @media (max-width: 48rem) {
+            .glass-cards {
+                max-width: 100%;
+            }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px) saturate(140%);
+            -webkit-backdrop-filter: blur(20px) saturate(140%);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 12px;
+            padding: var(--s-4) var(--s-5);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        }
+
+        .glass-card-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #666;
+            margin-bottom: var(--s-2);
+        }
+
+        .glass-card-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--color-fg);
+        }
+
+        .section {
+            padding: var(--s-8) var(--s-5);
+            max-width: 90rem;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 48rem) {
+            .section {
+                padding: var(--s-9) var(--s-6);
+            }
+        }
+
+        @media (min-width: 64rem) {
+            .section {
+                padding: var(--s-10) var(--s-7);
+            }
+        }
+
+        .section-header {
+            margin-bottom: var(--s-7);
+        }
+
+        .section-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: var(--s-3);
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            max-width: 24ch;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+            gap: var(--s-5);
+        }
+
+        .trust-stat {
+            padding: var(--s-5);
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+                        0 2px 2px hsl(0deg 0% 0% / 0.075),
+                        0 4px 4px hsl(0deg 0% 0% / 0.075);
+            transition: all 300ms cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .trust-stat:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 2px 2px hsl(0deg 0% 0% / 0.075),
+                        0 4px 4px hsl(0deg 0% 0% / 0.075),
+                        0 8px 8px hsl(0deg 0% 0% / 0.075),
+                        0 16px 16px hsl(0deg 0% 0% / 0.075);
+        }
+
+        .trust-stat-label {
+            font-size: 0.875rem;
+            color: #666;
+            margin-bottom: var(--s-2);
+        }
+
+        .trust-stat-value {
+            font-size: 2.25rem;
+            font-weight: 800;
+            line-height: 1;
+            color: var(--color-fg);
+        }
+
+        .services-bento {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: var(--s-5);
+            margin-top: var(--s-6);
+        }
+
+        @media (max-width: 48rem) {
+            .services-bento {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .service-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: var(--s-6);
+            box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+                        0 2px 2px hsl(0deg 0% 0% / 0.075),
+                        0 4px 4px hsl(0deg 0% 0% / 0.075);
+            transition: all 300ms cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 4px hsl(0deg 0% 0% / 0.075),
+                        0 8px 8px hsl(0deg 0% 0% / 0.075),
+                        0 16px 16px hsl(0deg 0% 0% / 0.075),
+                        0 32px 32px hsl(0deg 0% 0% / 0.075);
+        }
+
+        .service-card-1 {
+            grid-column: span 3;
+        }
+
+        .service-card-2 {
+            grid-column: span 3;
+        }
+
+        .service-card-3 {
+            grid-column: span 2;
+        }
+
+        .service-card-4 {
+            grid-column: span 2;
+            grid-row: span 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .service-card-5 {
+            grid-column: span 2;
+        }
+
+        @media (max-width: 48rem) {
+            .service-card-1, .service-card-2, .service-card-3, .service-card-4, .service-card-5 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+
+        .service-card img {
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: var(--s-4);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: var(--s-3);
+            line-height: 1.2;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #4a4a4a;
+        }
+
+        .reviews-section {
+            background: radial-gradient(ellipse at top right, rgba(124, 58, 48, 0.06), transparent 50%),
+                        radial-gradient(ellipse at bottom left, rgba(124, 58, 48, 0.04), transparent 60%);
+        }
+
+        .review-pull {
+            max-width: 56rem;
+            margin: 0 auto var(--s-8);
+            padding: var(--s-7) var(--s-6);
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+                        0 2px 2px hsl(0deg 0% 0% / 0.075),
+                        0 4px 4px hsl(0deg 0% 0% / 0.075),
+                        0 8px 8px hsl(0deg 0% 0% / 0.075);
+        }
+
+        .review-pull blockquote {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+            color: var(--color-fg);
+            margin-bottom: var(--s-5);
+        }
+
+        .review-pull cite {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            font-style: normal;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+            gap: var(--s-5);
+        }
+
+        .review-card {
+            padding: var(--s-5);
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+                        0 2px 2px hsl(0deg 0% 0% / 0.075);
+        }
+
+        .review-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #4a4a4a;
+            margin-bottom: var(--s-4);
+        }
+
+        .review-card cite {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--color-fg);
+            font-style: normal;
+        }
+
+        .process-section {
+            background: var(--color-dark-charcoal);
+            color: var(--color-warm-grey);
+            mask-image: linear-gradient(180deg, transparent 0%, black 5%, black 95%, transparent 100%);
+        }
+
+        .process-section .section-eyebrow {
+            color: var(--color-accent);
+        }
+
+        .process-section .section-title {
+            color: #ffffff;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+            gap: var(--s-6);
+        }
+
+        .process-step {
+            position: relative;
+        }
+
+        .process-step-number {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1;
+            color: var(--color-accent);
+            margin-bottom: var(--s-4);
+        }
+
+        .process-step h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: var(--s-3);
+        }
+
+        .process-step p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--color-warm-grey);
+        }
+
+        .process-photo-strip {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            margin-top: var(--s-8);
+        }
+
+        .process-photo-strip img {
+            width: 100%;
+            aspect-ratio: 21 / 9;
+            object-fit: cover;
+        }
+
+        .cta-final {
+            padding: var(--s-9) var(--s-5);
+            text-align: center;
+            background: radial-gradient(ellipse at center, rgba(124, 58, 48, 0.08), transparent 70%);
+        }
+
+        @media (min-width: 48rem) {
+            .cta-final {
+                padding: var(--s-10) var(--s-6);
+            }
+        }
+
+        .cta-final h2 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--s-5);
+        }
+
+        .cta-final p {
+            font-size: 1.25rem;
+            color: #4a4a4a;
+            margin-bottom: var(--s-6);
+            max-width: 48ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-final-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s-3);
+            padding: var(--s-5) var(--s-7);
+            background: var(--color-accent);
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 300ms cubic-bezier(0.22, 1, 0.36, 1);
+            box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+                        0 2px 2px hsl(0deg 0% 0% / 0.075),
+                        0 4px 4px hsl(0deg 0% 0% / 0.075),
+                        0 8px 8px hsl(0deg 0% 0% / 0.075),
+                        0 16px 16px hsl(0deg 0% 0% / 0.075);
+        }
+
+        .cta-final-phone:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 4px hsl(0deg 0% 0% / 0.075),
+                        0 8px 8px hsl(0deg 0% 0% / 0.075),
+                        0 16px 16px hsl(0deg 0% 0% / 0.075),
+                        0 32px 32px hsl(0deg 0% 0% / 0.075),
+                        0 64px 64px hsl(0deg 0% 0% / 0.075);
+        }
+
+        .phone-sticky {
+            position: fixed;
+            bottom: var(--s-5);
+            right: var(--s-5);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: var(--s-3);
+            padding: var(--s-4) var(--s-5);
+            background: var(--color-accent);
+            color: #ffffff;
+            font-size: 1.125rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 4px hsl(0deg 0% 0% / 0.1),
+                        0 8px 8px hsl(0deg 0% 0% / 0.1),
+                        0 16px 16px hsl(0deg 0% 0% / 0.1),
+                        0 32px 32px hsl(0deg 0% 0% / 0.1);
+            transition: all 300ms cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .phone-sticky:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 8px hsl(0deg 0% 0% / 0.12),
+                        0 16px 16px hsl(0deg 0% 0% / 0.12),
+                        0 32px 32px hsl(0deg 0% 0% / 0.12),
+                        0 64px 64px hsl(0deg 0% 0% / 0.12);
+        }
+
+        @media (max-width: 48rem) {
+            .phone-sticky {
+                bottom: var(--s-4);
+                right: var(--s-4);
+                font-size: 1rem;
+                padding: var(--s-3) var(--s-4);
+            }
+        }
+
+        .phone-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        footer {
+            padding: var(--s-7) var(--s-5);
+            background: var(--color-dark-charcoal);
+            color: var(--color-warm-grey);
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.875rem;
+            margin-bottom: var(--s-3);
+        }
+
+        footer a {
+            color: var(--color-warm-grey);
+            text-decoration: none;
+            transition: color 300ms cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        .logo-footer {
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto var(--s-4);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <a href="tel:+16787997499" class="phone-sticky" aria-label="Call Rosie's Roofing">
+        <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        <span>Call Now</span>
+    </a>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-eyebrow">GAF Master Elite · Triple-Certified · Atlanta</div>
+                <h1>The only quote that says "repair" before "replace"</h1>
+                <p class="hero-sub">GAF Master Elite, Owens Corning Preferred, and CertainTeed Preferred. Few contractors nationwide hold all three. 5.0 stars from 32 real Atlanta homeowners.</p>
+                <a href="tel:+16787997499" class="hero-cta">Call 678-799-7499</a>
+            </div>
+            <div class="hero-visual">
+                <img src="./assets/883190515821_Rosies-Roofing-Resto.jpg" alt="Rosie's Roofing team installing premium roof in Atlanta" width="1600" height="640" class="hero-image" fetchpriority="high">
+                <!-- origin: prospect -->
+                <div class="glass-cards">
+                    <div class="glass-card">
+                        <div class="glass-card-label">Rating</div>
+                        <div class="glass-card-value">5.0 ★</div>
+                    </div>
+                    <div class="glass-card">
+                        <div class="glass-card-label">Reviews</div>
+                        <div class="glass-card-value">32</div>
+                    </div>
+                    <div class="glass-card">
+                        <div class="glass-card-label">Certifications</div>
+                        <div class="glass-card-value">3 Elite</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-eyebrow">The Certifications</div>
+                <h2 class="section-title">GAF Master Elite, Owens Corning Preferred, CertainTeed Preferred</h2>
+            </div>
+            <div class="trust-grid">
+                <div class="trust-stat">
+                    <div class="trust-stat-label">GAF Master Elite</div>
+                    <div class="trust-stat-value">Top 3%</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-stat-label">Owens Corning</div>
+                    <div class="trust-stat-value">Preferred</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-stat-label">CertainTeed</div>
+                    <div class="trust-stat-value">Preferred</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-stat-label">Customer Rating</div>
+                    <div class="trust-stat-value">5.0 / 5.0</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div class="section-eyebrow">What We Do</div>
+                <h2 class="section-title">Roofing, gutters, restoration — done to last</h2>
+            </div>
+            <div class="services-bento">
+                <div class="service-card service-card-1">
+                    <h3>Roof Replacement</h3>
+                    <p>Complete tear-off and replacement with manufacturer-backed warranties. GAF, Owens Corning, and CertainTeed systems.</p>
+                </div>
+                <div class="service-card service-card-2">
+                    <h3>Gutter Services</h3>
+                    <p>Full gutter replacement, cleaning, and repair. Protect your foundation and landscaping.</p>
+                </div>
+                <div class="service-card service-card-3">
+                    <h3>Storm Damage Restoration</h3>
+                    <p>Insurance claim assistance from inspection to completion. Courtney handles every detail.</p>
+                </div>
+                <div class="service-card service-card-4">
+                    <h3>Roof Repair</h3>
+                    <p>Charlie's the only one of four quotes who mentioned extending the life of a roof with repairs instead of immediate replacement.</p>
+                </div>
+                <div class="service-card service-card-5">
+                    <h3>Roofing Supply</h3>
+                    <p>Premium materials from GAF, Owens Corning, and CertainTeed for contractors and DIY projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reviews-section">
+            <div class="section-header">
+                <div class="section-eyebrow">5.0 Stars · 32 Reviews</div>
+                <h2 class="section-title">What Atlanta homeowners say</h2>
+            </div>
+            <div class="review-pull">
+                <blockquote>"Charlie was the only one of the four quotes that mentioned they could extend the life of my roof with repairs instead of immediate replacement."</blockquote>
+                <cite>— Long-term</cite>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p>"The team who replaced our roof and gutters was extremely prompt, professional, friendly. We couldn't be happier with our new roof and the experience working with Rosie's."</p>
+                    <cite>— Verified</cite>
+                </div>
+                <div class="review-card">
+                    <p>"Had a wonderful experience with Rosie's after hail damage. Courtney handled every single detail, including going back and forth with the insurance company, and went above and beyond to work with the team and help move a dumpster trailer when needed."</p>
+                    <cite>— Storm</cite>
+                </div>
+                <div class="review-card">
+                    <p>"I'm very happy with my new roof! Adrienne walked me through the whole process and the crew was efficient, clean up was thorough and then follow up allowed for any final questions."</p>
+                    <cite>— Adrienne's</cite>
+                </div>
+                <div class="review-card">
+                    <p>"Professional, attentive, and quality job. The crew arrived just before sunrise and finished just after sundown. Barely a moment of pause throughout the day."</p>
+                    <cite>— Dawn-to-dusk</cite>
+                </div>
+            </div>
+        </section>
+
+        <section class="section process-section">
+            <div class="section-header">
+                <div class="section-eyebrow">How We Work</div>
+                <h2 class="section-title">From inspection to warranty</h2>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-step-number">01</div>
+                    <h3>Schedule Inspection</h3>
+                    <p>Contact us to schedule an appointment. One of our certified team members will perform a thorough inspection to see what's needed.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step-number">02</div>
+                    <h3>Honest Assessment</h3>
+                    <p>We'll tell you what you need — repair or replace. If your roof can last another 5 years with a repair, we'll say so.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step-number">03</div>
+                    <h3>Professional Install</h3>
+                    <p>Dawn-to-dusk work. Efficient crews, thorough cleanup, manufacturer-backed warranties on materials and labor.</p>
+                </div>
+            </div>
+            <div class="process-photo-strip">
+                <img src="./assets/_flux_behind_the_work.jpg" alt="Rosie's Roofing crew at work on Atlanta project" width="1344" height="768" loading="lazy" decoding="async">
+                <!-- origin: flux -->
+            </div>
+        </section>
+
+        <section class="cta-final">
+            <h2>Ready for an honest quote?</h2>
+            <p>Call Charlie direct. Same-day inspections available. Insurance claim assistance from start to finish.</p>
+            <a href="tel:+16787997499" class="cta-final-phone">678-799-7499</a>
+        </section>
+
+        <footer>
+            <img src="./assets/17549cdf11ef_rosies-roofing-logop.jpg" alt="Rosie's Roofing and Restoration logo" width="500" height="203" class="logo-footer" loading="lazy" decoding="async">
+            <!-- origin: prospect -->
+            <p>GAF Master Elite · Owens Corning Preferred · CertainTeed Preferred</p>
+            <p><a href="tel:+16787997499">678-799-7499</a></p>
+            <p>&copy; 2026 Rosie's Roofing and Restoration. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>
